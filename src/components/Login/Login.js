@@ -1,20 +1,19 @@
 import React, { Component } from "react"
-import { View, Text, StyleSheet, Image } from "react-native"
+import { View, Text, StyleSheet, Image, KeyboardAvoidingView } from "react-native"
 import LoginForm from "./LoginForm";
 
 class Login extends Component {
      
     render() {
         return (
-            <View style={styles.container}>
+            <KeyboardAvoidingView style={styles.container}>
                 <View style={styles.loginContainer}>
-                    <Image resizeMode="contain" style={styles.logo} source={require('../../components/images/logo-dark-bg.png')} />
+                    <Image resizeMode="contain" style={styles.logo} source={require('../../../img/logo.jpg')} />
                 </View>
-
                 <View style={styles.formContainer}>
                     <LoginForm />
                 </View>
-            </View>
+            </KeyboardAvoidingView>
         )
     }
 }
@@ -23,7 +22,6 @@ class Login extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#E5DEC0',
         width: 375,
     },
     loginContainer:{

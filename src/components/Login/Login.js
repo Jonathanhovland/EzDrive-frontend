@@ -8,7 +8,7 @@ class Login extends Component {
         return (
             <KeyboardAvoidingView style={styles.container}>
                 <View style={styles.loginContainer}>
-                    <Image resizeMode="contain" style={styles.logo} source={require('../../../img/logo.jpg')} />
+                    <Image resizeMode="contain" style={styles.logo} source={require('../../../img/logo3.png')} />
                 </View>
                 <View style={styles.formContainer}>
                     <LoginForm />
@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     },
     logo: {
         position: 'absolute',
-        width: 300,
+        width: 400,
         height: 100
     }
 })

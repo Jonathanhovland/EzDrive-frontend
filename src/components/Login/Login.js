@@ -1,9 +1,8 @@
 import React, { Component } from "react"
-import { View, Text, StyleSheet, Image, KeyboardAvoidingView } from "react-native"
-import LoginForm from "./LoginForm";
+import { View, Text, StyleSheet, Image, KeyboardAvoidingView, TouchableOpacity } from "react-native"
+import LoginForm from "./LoginForm"
 
 class Login extends Component {
-     
     render() {
         return (
             <KeyboardAvoidingView style={styles.container}>
@@ -18,9 +17,10 @@ class Login extends Component {
     }
 }
 
-// define your styles
+
 const styles = StyleSheet.create({
     container: {
+        backgroundColor: '#E5DEC0',
         flex: 1,
         width: 375,
     },
@@ -33,6 +33,16 @@ const styles = StyleSheet.create({
         position: 'absolute',
         width: 400,
         height: 100
+    },
+    buttonContainer:{
+        backgroundColor: '#AFD1D1',
+        paddingVertical: 15,
+        marginBottom: 10
+    },
+    buttonText:{
+        color: '#FBF9F7',
+        textAlign: 'center',
+        fontWeight: '500'
     }
 })
 

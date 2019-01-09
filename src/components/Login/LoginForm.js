@@ -1,10 +1,7 @@
 //import liraries
-import React, { Component } from 'react';
-import { View, Text, TextInput, TouchableOpacity, Alert, Button ,StyleSheet ,StatusBar} from 'react-native';
-
-const onButtonPress = () => {
-  Alert.alert('Boom!');
-};
+import React, { Component } from 'react'
+import { View, Text, TextInput, TouchableOpacity, Alert, Button ,StyleSheet ,StatusBar} from 'react-native'
+import { withNavigation } from 'react-navigation'
 
 class LoginForm extends Component {
     render() {
@@ -12,28 +9,29 @@ class LoginForm extends Component {
             <View style={styles.container}>
                 <StatusBar barStyle="light-content"/>
                 <TextInput style = {styles.input} 
-                            autoCapitalize="none" 
-                            onSubmitEditing={() => this.passwordInput.focus()} 
-                            autoCorrect={false} 
-                            keyboardType='email-address' 
-                            returnKeyType="next" 
-                            placeholder='USERNAME' 
-                            placeholderTextColor="#AFD1D1"/>
+                    autoCapitalize="none" 
+                    onSubmitEditing={() => this.passwordInput.focus()} 
+                    autoCorrect={false} 
+                    keyboardType='email-address' 
+                    returnKeyType="next" 
+                    placeholder='USERNAME' 
+                    placeholderTextColor="#AFD1D1"/>
                 <TextInput style = {styles.input}   
-                           returnKeyType="go" ref={(input)=> this.passwordInput = input} 
-                           placeholder='PASSWORD' 
-                           placeholderTextColor="#AFD1D1" 
-                           secureTextEntry/>
-              <TouchableOpacity style={styles.buttonContainer} onPress={onButtonPress}>
+                    returnKeyType="go" ref={(input)=> this.passwordInput = input} 
+                    placeholder='PASSWORD' 
+                    placeholderTextColor="#AFD1D1" 
+                    secureTextEntry/>
+              <TouchableOpacity style={styles.buttonContainer} onPress={() => this.props.navigation.navigate('Home')}>
                     <Text  style={styles.buttonText}>LOGIN</Text>
                 </TouchableOpacity> 
-                <TouchableOpacity style={styles.buttonContainerT} onPress={onButtonPress}>
+                <TouchableOpacity style={styles.buttonContainerT} onPress={() => this.props.navigation.navigate('SignUp')}>
                     <Text  style={styles.buttonTextT}>REGISTER</Text>
                 </TouchableOpacity>
             </View>
-        );
+        )
     }
 }
+
 
 const styles = StyleSheet.create({
     container: {
@@ -67,7 +65,6 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontWeight: '500'
     }
-   
-});
+})
 
-export default LoginForm;
+export default withNavigation(LoginForm)

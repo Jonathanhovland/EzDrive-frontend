@@ -1,6 +1,8 @@
 import React, { Component } from "react"
 import { View, Text, StyleSheet, Image, KeyboardAvoidingView, TouchableOpacity } from "react-native"
 import LoginForm from "./LoginForm"
+import { Actions } from "react-native-router-flux"
+
 
 class Login extends Component {
     render() {

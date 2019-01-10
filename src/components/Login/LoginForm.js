@@ -23,10 +23,10 @@ class LoginForm extends Component {
                     placeholder='PASSWORD' 
                     placeholderTextColor="#AFD1D1" 
                     secureTextEntry/>
-              <TouchableOpacity style={styles.buttonContainer} onPress={() => this.props.navigation.navigate('Home')}>
+              <TouchableOpacity style={styles.buttonContainer} onPress={() => Actions.home()}>
                     <Text  style={styles.buttonText}>LOGIN</Text>
                 </TouchableOpacity> 
-                <TouchableOpacity style={styles.buttonContainerT} onPress={() => this.props.navigation.navigate('SignUp')}>
+                <TouchableOpacity style={styles.buttonContainerT} onPress={() => Actions.signup()}>
                     <Text  style={styles.buttonTextT}>REGISTER</Text>
                 </TouchableOpacity>
             </View>

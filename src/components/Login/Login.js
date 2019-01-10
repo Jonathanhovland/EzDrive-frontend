@@ -5,6 +5,9 @@ import { Actions } from "react-native-router-flux"
 
 
 class Login extends Component {
+    static navigationOptions = {
+        headerStyle: { backgroundColor: '#4B8B9D' },
+    }
     render() {
         return (
             <KeyboardAvoidingView style={styles.container}>

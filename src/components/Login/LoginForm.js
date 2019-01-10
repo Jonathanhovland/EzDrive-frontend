@@ -5,33 +5,31 @@ import { withNavigation } from 'react-navigation'
 import { Actions } from "react-native-router-flux"
 
 
-class LoginForm extends Component {
-    render() {
-        return (
-            <View style={styles.container}>
-                <StatusBar barStyle="light-content"/>
-                <TextInput style = {styles.input} 
-                    autoCapitalize="none" 
-                    onSubmitEditing={() => this.passwordInput.focus()} 
-                    autoCorrect={false} 
-                    keyboardType='email-address' 
-                    returnKeyType="next" 
-                    placeholder='USERNAME' 
-                    placeholderTextColor="#FBF9F7"/>
-                <TextInput style = {styles.input}   
-                    returnKeyType="go" ref={(input)=> this.passwordInput = input} 
-                    placeholder='PASSWORD' 
-                    placeholderTextColor="#FBF9F7" 
-                    secureTextEntry/>
-              <TouchableOpacity style={styles.buttonContainer} onPress={() => Actions.home()}>
-                    <Text  style={styles.buttonText}>LOGIN</Text>
-                </TouchableOpacity> 
-                <TouchableOpacity style={styles.buttonContainerT} onPress={() => Actions.signup()}>
-                    <Text  style={styles.buttonTextT}>REGISTER</Text>
-                </TouchableOpacity>
-            </View>
-        )
-    }
+const LoginForm = () => {
+    return (
+        <View style={styles.container}>
+            <StatusBar barStyle="light-content"/>
+            <TextInput style = {styles.input} 
+                autoCapitalize="none" 
+                onSubmitEditing={() => this.passwordInput.focus()} 
+                autoCorrect={false} 
+                keyboardType='email-address' 
+                returnKeyType="next" 
+                placeholder='USERNAME' 
+                placeholderTextColor="#FBF9F7"/>
+            <TextInput style = {styles.input}   
+                returnKeyType="go" ref={(input)=> this.passwordInput = input} 
+                placeholder='PASSWORD' 
+                placeholderTextColor="#FBF9F7" 
+                secureTextEntry/>
+            <TouchableOpacity style={styles.buttonContainer} onPress={() => Actions.home()}>
+                <Text  style={styles.buttonText}>LOGIN</Text>
+            </TouchableOpacity> 
+            <TouchableOpacity style={styles.buttonContainerT} onPress={() => Actions.signup()}>
+                <Text  style={styles.buttonTextT}>REGISTER</Text>
+            </TouchableOpacity>
+        </View>
+    )
 }
 
 

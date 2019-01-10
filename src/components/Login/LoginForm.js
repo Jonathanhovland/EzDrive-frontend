@@ -17,11 +17,11 @@ class LoginForm extends Component {
                     keyboardType='email-address' 
                     returnKeyType="next" 
                     placeholder='USERNAME' 
-                    placeholderTextColor="#AFD1D1"/>
+                    placeholderTextColor="#FBF9F7"/>
                 <TextInput style = {styles.input}   
                     returnKeyType="go" ref={(input)=> this.passwordInput = input} 
                     placeholder='PASSWORD' 
-                    placeholderTextColor="#AFD1D1" 
+                    placeholderTextColor="#FBF9F7" 
                     secureTextEntry/>
               <TouchableOpacity style={styles.buttonContainer} onPress={() => Actions.home()}>
                     <Text  style={styles.buttonText}>LOGIN</Text>
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
         fontWeight: '500'
     }, 
     buttonTextT:{
-        color: '#76AFB8',
+        color: '#4B8B9D',
         textAlign: 'center',
         fontWeight: '500'
     }

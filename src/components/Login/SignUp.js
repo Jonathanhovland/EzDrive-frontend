@@ -19,49 +19,49 @@ class SignUp extends Component {
             <StatusBar barStyle="light-content"/>
             <Image resizeMode="contain" style={styles.logo} source={require("../../../img/logo3.png")} />
             <View style={styles.inputContainer}>
-            <TextInput style = {styles.input} 
+            <TextInput style = {styles.inputDark} 
                 autoCapitalize="none" 
                 onSubmitEditing={() => this.passwordInput.focus()} 
                 autoCorrect={false} 
                 keyboardType='email-address' 
                 returnKeyType="next" 
                 placeholder="EMAIL" 
-                placeholderTextColor="#AFD1D1"/>
-            <TextInput style = {styles.input} 
+                placeholderTextColor="#FBF9F7"/>
+            <TextInput style = {styles.inputDark} 
                 autoCapitalize="none" 
                 onSubmitEditing={() => this.passwordInput.focus()} 
                 autoCorrect={false} 
                 placeholder="USERNAME" 
-                placeholderTextColor="#AFD1D1"/>
-            <TextInput style = {styles.input}   
+                placeholderTextColor="#FBF9F7"/>
+            <TextInput style = {styles.inputMed}   
                 returnKeyType="go" ref={(input)=> this.passwordInput = input} 
                 placeholder='PASSWORD' 
-                placeholderTextColor="#AFD1D1" 
+                placeholderTextColor="#FBF9F7" 
                 secureTextEntry/>
-            <TextInput style = {styles.input} 
+            <TextInput style = {styles.inputMed} 
                 autoCapitalize="none" 
                 onSubmitEditing={() => this.passwordInput.focus()} 
                 autoCorrect={false} 
                 placeholder="MAKE" 
-                placeholderTextColor="#AFD1D1"/>
-            <TextInput style = {styles.input} 
+                placeholderTextColor="#FBF9F7"/>
+            <TextInput style = {styles.inputMed} 
                 autoCapitalize="none" 
                 onSubmitEditing={() => this.passwordInput.focus()} 
                 autoCorrect={false} 
                 placeholder="MODEL" 
-                placeholderTextColor="#AFD1D1"/>
-            <TextInput style = {styles.input} 
+                placeholderTextColor="#FBF9F7"/>
+            <TextInput style = {styles.inputLight} 
                 autoCapitalize="none" 
                 onSubmitEditing={() => this.passwordInput.focus()} 
                 autoCorrect={false} 
                 placeholder="YEAR" 
-                placeholderTextColor="#AFD1D1"/>
-            <TextInput style = {styles.input} 
+                placeholderTextColor="#FBF9F7"/>
+            <TextInput style = {styles.inputLight} 
                 autoCapitalize="none" 
                 onSubmitEditing={() => this.passwordInput.focus()} 
                 autoCorrect={false} 
                 placeholder="MILES" 
-                placeholderTextColor="#AFD1D1"/>
+                placeholderTextColor="#FBF9F7"/>
             <TouchableOpacity style={styles.buttonContainer} onPress={() => Actions.login()}>
                 <Text  style={styles.buttonText}>SIGN UP</Text>
             </TouchableOpacity>
@@ -80,13 +80,29 @@ const styles = StyleSheet.create({
     inputContainer: {
         marginTop: 275,
     },
-    input: {
-           height: 40,
-           backgroundColor: "#4B8B9D",
-           marginTop: 10,
-           padding: 10,
-           color: '#FBF9F7',
-           textAlign: "center"
+    inputDark: {
+        height: 40,
+        backgroundColor: "#4B8B9D",
+        marginTop: 10,
+        padding: 10,
+        color: '#FBF9F7',
+        textAlign: "center"
+    },
+    inputMed: {
+        height: 40,
+        backgroundColor: "#76AFB8",
+        marginTop: 10,
+        padding: 10,
+        color: '#FBF9F7',
+        textAlign: "center"
+    },
+    inputLight: {
+        height: 40,
+        backgroundColor: "#AFD1D1",
+        marginTop: 10,
+        padding: 10,
+        color: '#FBF9F7',
+        textAlign: "center"
     },
     logo: {
         position: "absolute",
@@ -95,14 +111,14 @@ const styles = StyleSheet.create({
         marginTop: 110
     },
     buttonContainer: {
-           backgroundColor: "#FBF9F7",
-           paddingVertical: 15,
-           marginTop:12
+        backgroundColor: "#FBF9F7",
+        paddingVertical: 15,
+        marginTop:12
     },
     buttonText: {
-           color: "#FBF9F7",
-           textAlign: "center",
-           fontWeight: "500"
+        color: "#4B8B9D",
+        textAlign: "center",
+        fontWeight: "500"
     }
 })
 

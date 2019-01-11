@@ -2,7 +2,6 @@ import React, { Component } from "react"
 import { View, Text, StyleSheet, Image, KeyboardAvoidingView, Button} from "react-native"
 import { withNavigation } from "react-navigation"
 import { Actions } from "react-native-router-flux"
-import HomeForm from "./GasCard";
 import GasCard from "./GasCard";
 
 class Home extends Component {

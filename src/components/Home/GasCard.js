@@ -2,11 +2,17 @@ import React, { Component } from "react"
 import { View, StyleSheet, Image, KeyboardAvoidingView, TouchableOpacity } from "react-native"
 import { Container, Header, Content, Card, CardItem, Text, Icon, Right, Button } from 'native-base';
 import { Actions } from "react-native-router-flux"
+import { ProgressCircle }  from 'react-native-svg-charts'
 
 
 const GasCard = () => {
-    return (
+    return (   
       <Container style={styles.container}>
+      <ProgressCircle
+      style={ { height: 200 } }
+      progress={ 0.7 }
+      progressColor={'#4B8B9D'}
+      />
         <Content>
         <Card>
             <CardItem style={styles.cardContainer}>

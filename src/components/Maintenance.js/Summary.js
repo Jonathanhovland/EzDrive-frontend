@@ -1,26 +1,25 @@
-import React, { Component } from "react"
-import { View, Text, StyleSheet, Image, KeyboardAvoidingView, Button } from "react-native"
-import { Actions } from "react-native-router-flux"
+import React from 'react'
+import { BarChart, Grid } from 'react-native-svg-charts'
 
-class Summary extends Component {
-    static navigationOptions = {
-        headerStyle: { backgroundColor: '#4B8B9D' },
-        headerLeft: (
-            <Button
-              onPress={() => Actions.home()}
-              title="Summary"
-              color="#FBF9F7"
-            />
-          )
-    }
+class Summary extends React.PureComponent {
+
     render() {
+
+        const fill = 'rgb(134, 65, 244)'
+        const data   = [ 50, 10, 40, 95, -4, -24, null, 85, undefined, 0, 35, 53, -53, 24, 50, -20, -80 ]
+
         return (
-            <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#E5DEC0' }}>
-                <Text>Maint</Text>
-            </View>
+            <BarChart
+                style={{ height: 200 }}
+                data={ data }
+                svg={{ fill }}
+                contentInset={{ top: 30, bottom: 30 }}
+            >
+                <Grid/>
+            </BarChart>
         )
     }
-}
 
+}
 
 export default Summary

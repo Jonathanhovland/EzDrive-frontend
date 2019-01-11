@@ -12,7 +12,8 @@ const GasCard = () => {
       style={ { height: 200 } }
       progress={ 0.7 }
       progressColor={'#4B8B9D'}
-      />
+      >
+      </ProgressCircle>
         <Content>
         <Card>
             <CardItem style={styles.cardContainer}>
@@ -58,6 +59,12 @@ const styles = StyleSheet.create({
 cardText:{
   color: '#FBF9F7'
 }, 
+title: {
+  color: '#4B8B9D',
+  textAlign: 'center',
+  fontWeight: 'bold',
+  margin: 92
+}
 
 })
 

@@ -8,7 +8,7 @@ class SignUp extends Component {
         headerLeft: (
             <Button
                 onPress={() => Actions.login()}
-                title="LOG IN"
+                title="Log in"
                 color="#FBF9F7"
             />
         )

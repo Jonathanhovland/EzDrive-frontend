@@ -8,14 +8,14 @@ class Maint extends Component {
         headerLeft: (
             <Button
               onPress={() => Actions.home()}
-              title="HOME"
+              title="Home"
               color="#FBF9F7"
             />
           ),
           headerRight: (
             <Button
               onPress={() => Actions.summary()}
-              title="SUMMARY"
+              title="Data"
               color="#FBF9F7"
             />
           )

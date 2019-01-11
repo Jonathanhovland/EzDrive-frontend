@@ -21,14 +21,14 @@ class Home extends Component {
       headerLeft: (
         <Button
           onPress={() => Actions.login()}
-          title="SIGN OUT"
+          title="Sign Out"
           color="#FBF9F7"
         />
       ),
         headerRight: (
           <Button
             onPress={() => Actions.maint()}
-            title="MAINT."
+            title="Maintenance"
             color="#FBF9F7"
           />
         )

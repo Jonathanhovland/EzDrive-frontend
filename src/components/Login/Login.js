@@ -38,16 +38,6 @@ const styles = StyleSheet.create({
         position: 'absolute',
         width: 400,
         height: 100
-    },
-    buttonContainer:{
-        backgroundColor: '#AFD1D1',
-        paddingVertical: 15,
-        marginBottom: 10
-    },
-    buttonText:{
-        color: '#FBF9F7',
-        textAlign: 'center',
-        fontWeight: '500'
     }
 })
 

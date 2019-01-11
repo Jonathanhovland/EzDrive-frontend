@@ -2,7 +2,8 @@ import React, { Component } from "react"
 import { View, Text, StyleSheet, Image, KeyboardAvoidingView, Button} from "react-native"
 import { withNavigation } from "react-navigation"
 import { Actions } from "react-native-router-flux"
-import HomeForm from "./HomeForm";
+import HomeForm from "./GasCard";
+import GasCard from "./GasCard";
 
 class Home extends Component {
 
@@ -36,9 +37,9 @@ class Home extends Component {
     
     render() {
         return (
-          <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#E5DEC0' }}>
-            <HomeForm />
-          </View>
+        
+            <GasCard />
+    
         )
     }
 }

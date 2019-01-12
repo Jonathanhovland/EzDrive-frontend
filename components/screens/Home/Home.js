@@ -2,7 +2,7 @@
 import {  StyleSheet, Image} from "react-native"
 import { Actions } from "react-native-router-flux"
 import React, { Component } from 'react';
-import { Container, Header, Content, Card, CardItem, Text, Left, Right, Button, Thumbnail, Body } from 'native-base';
+import { Container, Header, Content, Card, CardItem, Text, Left, Right, Button, Thumbnail, Body, Footer, FooterTab, Icon } from 'native-base';
 import Profile from "./Profile";
 import MaintChart from "./MaintChart";
 
@@ -33,12 +33,28 @@ class Home extends Component {
         return (
             <Container>
               <Profile />
-              <Button
-        onPress={() => Actions.gas()}
-        title="GAs"
-        color=" #4B8B9D"
-        />
+              
               <MaintChart />
+              <Footer>
+          <FooterTab>
+            <Button vertical active
+            onPress={() => Actions.gas()}
+            >
+              <Icon active name="navigate" />
+              <Text>Gas</Text>
+            </Button>
+            <Button vertical
+            onPress={() => Actions.maint()}>
+              <Icon name="person" />
+              <Text>Maint.</Text>
+            </Button>
+            <Button vertical
+            onPress={() => Actions.data()}>
+              <Icon name="camera" />
+              <Text>Data</Text>
+            </Button>
+          </FooterTab>
+        </Footer>
               </Container>
             )
           }

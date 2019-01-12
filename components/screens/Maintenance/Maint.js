@@ -4,21 +4,7 @@ import { Actions } from "react-native-router-flux"
 
 class Maint extends Component {
     static navigationOptions = {
-        headerStyle: { backgroundColor: '#4B8B9D' },
-        headerLeft: (
-            <Button
-              onPress={() => Actions.home()}
-              title="Home"
-              color="#FBF9F7"
-            />
-          ),
-          headerRight: (
-            <Button
-              onPress={() => Actions.summary()}
-              title="Data"
-              color="#FBF9F7"
-            />
-          )
+        headerStyle: { backgroundColor: '#4B8B9D' }
     }
     render() {
         return (

@@ -43,9 +43,9 @@ export default class App extends React.Component {
             title="Maint"
           />
           <Scene
-            key="summary"
+            key="data"
             component={Data}
-            title="Summary"
+            title="Data"
           />
         
         </Scene>

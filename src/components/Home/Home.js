@@ -1,10 +1,10 @@
 // import React, { Component } from "react"
-// import {  StyleSheet, Left, Image} from "react-native"
+import {  StyleSheet, Image} from "react-native"
 import { Actions } from "react-native-router-flux"
 import { ProgressCircle } from 'react-native-svg-charts'
 // import { Container, Header, Content, Card, CardItem, Text, Icon, Right, Button, Thumbnail, Body } from 'native-base';
 import React, { Component } from 'react';
-import { Container, Header, Content, Card, CardItem, Text, Icon, Right, Button } from 'native-base';
+import { Container, Header, Content, Card, CardItem, Text, Left, Right, Button, Thumbnail, Body } from 'native-base';
 
 
 
@@ -32,7 +32,15 @@ class Home extends Component {
     render() {
         return (
                 <Container>
-        <Header />
+        <Header>
+      
+                <Thumbnail source={require('../../../img/3.jpg')} />
+                <Body>
+                  <Text>2016 Toyota 4Runner</Text>
+                  <Text note>Purchased: 11/2017</Text>
+                </Body>
+              
+        </Header>
         <Content>
           <Card>
           <CardItem>

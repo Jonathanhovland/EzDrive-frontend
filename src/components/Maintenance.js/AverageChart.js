@@ -15,7 +15,7 @@ const AverageChart = () => {
                 x={ value > CUT_OFF ? x(0) + 10 : x(value) + 10 }
                 y={ y(index) + (bandwidth / 2) }
                 fontSize={ 14 }
-                fill={ value > CUT_OFF ? 'white' : 'black' }
+                fill={ value > CUT_OFF ? '#FBF9F7' : '#4B8B9D' }
                 alignmentBaseline={ 'middle' }
             >
                 {value}

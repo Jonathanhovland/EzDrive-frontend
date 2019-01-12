@@ -1,6 +1,7 @@
 import React from 'react'
 import { PieChart } from 'react-native-svg-charts'
 import { Text } from 'react-native-svg'
+import { View } from 'native-base';
 
 const CostChart = () => {
 
@@ -54,6 +55,7 @@ const CostChart = () => {
         }
 
         return (
+            <View>
             <PieChart
                 style={{ height: 200 }}
                 valueAccessor={({ item }) => item.amount}
@@ -62,7 +64,9 @@ const CostChart = () => {
                 outerRadius={'95%'}
             >
                 <Labels/>
+            <Text>$11,309.21</Text>
             </PieChart>
+            </View>
         )
     }
 

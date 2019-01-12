@@ -2,12 +2,12 @@ import React from 'react';
 // import { Button, View, Text } from 'react-native';
 import { Router, Scene } from "react-native-router-flux"
 
-import Login from './src/components/Login/Login';
-import Home from './src/components/Home/Home';
-import SignUp from './src/components/Login/SignUp';
-import Maint from './src/components/Maintenance.js/Maint';
-import Summary from './src/components/Maintenance.js/Summary';
-import GasCard from './src/components/Home/GasCard';
+import Login from './components/screens/Login/Login';
+import Home from './components/screens/Home/Home';
+import SignUp from './components/screens/SignUp/SignUp';
+import Maint from './components/screens/Maintenance/Maint';
+import Data from './components/screens/Data/Data';
+import Gas from './components/screens/Gas/Gas';
 
 
 
@@ -34,7 +34,7 @@ export default class App extends React.Component {
           />
           <Scene
             key="gas"
-            component={GasCard}
+            component={Gas}
             title="Gas"
           />
           <Scene
@@ -44,7 +44,7 @@ export default class App extends React.Component {
           />
           <Scene
             key="summary"
-            component={Summary}
+            component={Data}
             title="Summary"
           />
         

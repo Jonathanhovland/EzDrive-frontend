@@ -5,6 +5,9 @@ import React, { Component } from 'react';
 import { Container, Header, Content, Card, CardItem, Text, Left, Right, Button, Thumbnail, Body, Footer, FooterTab, Icon } from 'native-base';
 import Profile from "./Profile";
 import MaintChart from "./MaintChart";
+import CostCard from "./CostCard";
+import HFooter from "./HFooter";
+
 
 
 
@@ -33,28 +36,14 @@ class Home extends Component {
         return (
             <Container>
               <Profile />
-              
+              <CostCard />
               <MaintChart />
-              <Footer>
-          <FooterTab>
-            <Button vertical active
-            onPress={() => Actions.gas()}
-            >
-              <Icon active name="navigate" />
-              <Text>Gas</Text>
-            </Button>
-            <Button vertical
-            onPress={() => Actions.maint()}>
-              <Icon name="person" />
-              <Text>Maint.</Text>
-            </Button>
-            <Button vertical
-            onPress={() => Actions.data()}>
-              <Icon name="camera" />
-              <Text>Data</Text>
-            </Button>
-          </FooterTab>
-        </Footer>
+                <Card>
+                    <CardItem>
+                        <Text>                                   42,205</Text>
+                    </CardItem>
+                </Card>
+            <HFooter />
               </Container>
             )
           }

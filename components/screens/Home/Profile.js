@@ -25,14 +25,14 @@ const Profile = () =>  {
                     </CardItem>
                     <CardItem>
                     <Text>Payment              </Text>
-                    <Text>(1/20/2019)</Text>
+                    <Text>Monthly</Text>
                     <Right>
                         <Text>$500</Text>
                     </Right>
                     </CardItem>
                     <CardItem>
                     <Text>Insurance          </Text>
-                    <Text>  (1/20/2019)</Text>
+                    <Text>  Monthly</Text>
                     <Right>
                         <Text>$110</Text>
                     </Right>

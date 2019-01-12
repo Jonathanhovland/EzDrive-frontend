@@ -1,7 +1,6 @@
 //import liraries
 import React, { Component } from 'react'
 import { View, Text, TextInput, TouchableOpacity, Alert, Button ,StyleSheet ,StatusBar} from 'react-native'
-import { withNavigation } from 'react-navigation'
 import { Actions } from "react-native-router-flux"
 
 
@@ -67,4 +66,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default withNavigation(LoginForm)
+export default LoginForm

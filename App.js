@@ -1,20 +1,21 @@
 import React from 'react';
-import { Button, View, Text } from 'react-native';
+// import { Button, View, Text } from 'react-native';
 import { Router, Scene } from "react-native-router-flux"
+
 import Login from './src/components/Login/Login';
 import Home from './src/components/Home/Home';
 import SignUp from './src/components/Login/SignUp';
 import Maint from './src/components/Maintenance.js/Maint';
 import Summary from './src/components/Maintenance.js/Summary';
+import GasCard from './src/components/Home/GasCard';
 
 
 
 export default class App extends React.Component {
   render() {
     return (
-      <Router>
+      <Router hideNavBar= "true">
         <Scene key="root">
-
           <Scene
             key="login"
             component={Login}
@@ -32,6 +33,11 @@ export default class App extends React.Component {
             title="SignUp"
           />
           <Scene
+            key="gas"
+            component={GasCard}
+            title="Gas"
+          />
+          <Scene
             key="maint"
             component={Maint}
             title="Maint"
@@ -47,38 +53,3 @@ export default class App extends React.Component {
     )
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-// class LoginScreen extends React.Component {
-          //   static navigationOptions = {
-          //     headerStyle: { backgroundColor: '#4B8B9D' },
-          //   }
-          //   render() {
-          //     return (
-          //       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-          //         <Login />
-          //       </View>
-          //     );
-          //   }
-          // }
-          
-          // const AppNavigator = createStackNavigator(
-          //   {
-          //     Login: LoginScreen,
-          //     SignUp: SignUp,
-          //     Home: Home
-          //   },
-          //   {
-          //     initialRouteName: "Login"
-          //   }
-          // )
-          

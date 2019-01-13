@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Header, Content, Footer, FooterTab, Button, Icon, Text } from 'native-base';
+import { Actions } from "react-native-router-flux"
 
 const HFooter = () => {
     return (
@@ -7,17 +8,20 @@ const HFooter = () => {
         <Content />
         <Footer>
           <FooterTab>
-            <Button vertical>
+            <Button vertical
+            onPress={() => Actions.gas()}>
               <Icon name="speedometer" />
-              <Text>Camera</Text>
+              <Text>Gas</Text>
             </Button>
-            <Button vertical>
+            <Button vertical
+            onPress={() => Actions.maint()}>
               <Icon active name="car" />
-              <Text>Navigate</Text>
+              <Text>Maint.</Text>
             </Button>
-            <Button vertical>
-              <Icon name="person" />
-              <Text>Contact</Text>
+            <Button vertical
+            onPress={() => Actions.data()}>
+              <Icon name="pie" />
+              <Text>Data</Text>
             </Button>
           </FooterTab>
         </Footer>

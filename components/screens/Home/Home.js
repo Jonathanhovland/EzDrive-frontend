@@ -34,28 +34,30 @@ class Home extends Component {
     
     render() {
         return (
-            <Container>
+          <Container style={styles.container}>
+            <Container style={styles.container}>
               <Profile />
               <CostCard />
               <MaintChart />
                 <Card>
                     <CardItem>
-                        <Text>                                   42,205</Text>
+                        <Text>42,205</Text>
                     </CardItem>
                 </Card>
-            <HFooter />
+                <HFooter />
+              </Container>
               </Container>
             )
           }
         }
         
-        // const styles = StyleSheet.create({
-          //   container: {
-            //       backgroundColor: '#E5DEC0',
-            //       flex: 1,
-            //       width: 375,
-            //   }
-            // })
+        const styles = StyleSheet.create({
+            container: {
+                  backgroundColor: '#E5DEC0',
+                  flex: 1,
+                  width: 375,
+              }
+            })
             
             
             

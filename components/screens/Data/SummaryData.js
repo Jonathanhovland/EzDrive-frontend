@@ -1,8 +1,6 @@
-import React, { Component } from "react"
-import { Actions } from "react-native-router-flux"
-import { ProgressCircle } from 'react-native-svg-charts'
-import { Container, Header, Content, Card, CardItem, Text, Left, Right, Button, Thumbnail, Body } from 'native-base';
-import { View, StyleSheet, Image, KeyboardAvoidingView, TouchableOpacity } from "react-native"
+import React from "react"
+import { Container, Content, Card, CardItem, Text, Left, Right } from 'native-base';
+import { StyleSheet } from "react-native"
 import AverageChart from "./AverageChart";
 
 
@@ -14,7 +12,6 @@ const SummaryData = () =>  {
             <Content>
             <Card>
             <CardItem style={styles.cardContainer}>
-              {/* <Icon active name="logo-googleplus" /> */}
               <Left>
                 <Text style={styles.cardText1}>Payments</Text>
               </Left>
@@ -23,7 +20,6 @@ const SummaryData = () =>  {
               </Right>
              </CardItem>
              <CardItem style={styles.cardContainer}>
-              {/* <Icon active name="logo-googleplus" /> */}
               <Left>
                 <Text style={styles.cardText1}>Insurance</Text>
               </Left>
@@ -32,7 +28,6 @@ const SummaryData = () =>  {
               </Right>
              </CardItem>
              <CardItem style={styles.cardContainer}>
-              {/* <Icon active name="logo-googleplus" /> */}
               <Left>
                 <Text style={styles.cardText1}>Registration</Text>
               </Left>
@@ -41,7 +36,6 @@ const SummaryData = () =>  {
               </Right>
              </CardItem>
              <CardItem style={styles.cardContainer}>
-              {/* <Icon active name="logo-googleplus" /> */}
               <Left>
                 <Text style={styles.cardText1}>Maintenance</Text>
               </Left>
@@ -50,7 +44,6 @@ const SummaryData = () =>  {
               </Right>
              </CardItem>
              <CardItem style={styles.cardContainer}>
-              {/* <Icon active name="logo-googleplus" /> */}
               <Left>
                 <Text style={styles.cardText1}>Gas</Text>
               </Left>
@@ -59,7 +52,6 @@ const SummaryData = () =>  {
               </Right>
              </CardItem>
             <CardItem style={styles.cardContainer}>
-              {/* <Icon active name="logo-googleplus" /> */}
               <Left>
                 <Text style={styles.cardText2}>Total</Text>
               </Left>

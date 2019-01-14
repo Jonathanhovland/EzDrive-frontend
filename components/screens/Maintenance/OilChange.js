@@ -5,26 +5,30 @@ import { ProgressCircle } from 'react-native-svg-charts'
 // import { Container, Header, Content, Card, CardItem, Text, Icon, Right, Button, Thumbnail, Body } from 'native-base';
 import React, { Component } from 'react';
 import { Container, Header, Content, Card, CardItem, Text, Left, Right, Button, Thumbnail, Body } from 'native-base';
-import Profile from "./Profile";
+import ProgressBar from 'react-native-progress/Bar'
 
 
 
 
-const MaintChart = () => {
+const OilChange = () => {
 
 
           return (
             <View>
-              <Text style={ styles.text1}> Next Maintenance</Text>
-          <ProgressCircle
-                style={ styles.container}
-                progress={ 0.7 }
-                progressColor={'#4B8B9D'}
-                startAngle={ -Math.PI * 0.8 }
-                endAngle={ Math.PI * 0.8 }
                 
-            /> 
+
+            <ProgressBar progress={0.3} width={300} height={15} style={styles.progressBar}/>
+          
+                <Right>
+
             <Text style={ styles.text2}> 1245 Miles</Text>
+                </Right>
+                <ProgressBar progress={0.3} width={300} height={15} style={styles.progressBar}/>
+          
+                <Right>
+
+            <Text style={ styles.text2}> 1245 Miles</Text>
+                </Right>
             </View>
               )
             }
@@ -36,13 +40,10 @@ const MaintChart = () => {
                   height: 200,
                   marginBottom: 0
             },
-            text1: {
-              color: '#4B8B9D',
+            progressBar: {
+              color: 'pink',
               textAlign: 'center',
-              marginTop: 0,
-              marginBottom: 3,
-              fontWeight: 'bold',
-              fontSize: 20
+              marginTop: 10,
            },
            text2: {
             color: '#4B8B9D',
@@ -56,4 +57,4 @@ const MaintChart = () => {
             
             
             
-            export default MaintChart
+            export default OilChange

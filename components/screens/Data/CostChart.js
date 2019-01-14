@@ -64,7 +64,6 @@ const CostChart = () => {
                 outerRadius={'95%'}
             >
                 <Labels/>
-            <Text>$11,309.21</Text>
             </PieChart>
             </View>
         )

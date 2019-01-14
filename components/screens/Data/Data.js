@@ -3,6 +3,8 @@ import { StyleSheet } from 'react-native';
 import CostChart from './CostChart';
 import AverageChart from './AverageChart';
 import { View, Container, Button } from 'native-base';
+import SummaryData from './SummaryData';
+
 
 class Summary extends React.PureComponent {
 
@@ -28,7 +30,8 @@ class Summary extends React.PureComponent {
         return (
             <Container style={styles.container}>
             <CostChart />
-            <AverageChart />
+            <SummaryData />
+            {/* <AverageChart /> */}
             </Container>
         )
     }

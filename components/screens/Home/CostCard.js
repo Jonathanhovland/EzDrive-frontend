@@ -10,8 +10,8 @@ const CostCard = () =>  {
     return (
 
         <Container style={styles.container}>
-<Content>
-        <Card>
+            <Content>
+            <Card>
              <CardItem style={styles.cardContainer}>
               {/* <Icon active name="logo-googleplus" /> */}
               <Text style={styles.cardText1}>Miles</Text>
@@ -63,5 +63,4 @@ const styles = StyleSheet.create({
   })
             
             
-            
-            export default CostCard
+export default CostCard

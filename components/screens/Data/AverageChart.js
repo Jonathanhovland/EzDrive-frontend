@@ -24,7 +24,7 @@ const AverageChart = () => {
     )
 
     return (
-        <View style={{ flexDirection: 'row', height: 200, paddingVertical: 16 }}>
+        <View style={{ flexDirection: 'row', height: 200, paddingVertical: 16}}>
             <BarChart
                 style={{ flex: 1, marginLeft: 8 }}
                 data={data}

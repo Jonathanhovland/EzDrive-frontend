@@ -43,7 +43,7 @@ const MaintChart = () => {
               fontSize: 20
            },
            text2: {
-            color: '#76AFB8',
+            color: '#4B8B9D',
             textAlign: 'center',
             marginBottom: 5,
             fontWeight: 'bold',

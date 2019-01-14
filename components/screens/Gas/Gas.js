@@ -4,25 +4,30 @@ import { Container, Header, Content, Card, CardItem, Text, Icon, Right, Button, 
 import { Actions } from "react-native-router-flux"
 import { LineChart, Path, Grid } from 'react-native-svg-charts'
 import HFooter from "../Home/HFooter";
+import GasHistory from "./GasHistory";
 
 
-const Gas = () => {
-
-
-  const data = [ 50, 10, 40, 95, -4, -24, 85, 91, 35, 53, -53, 24, 50, -20, -80 ]
-
-  const Shadow = ({ line }) => (
-      <Path
-          key={'shadow'}
-          y={2}
-          d={line}
-          fill={'none'}
-          strokeWidth={4}
-          stroke={'#4B8B9D'}
-      />
-  )
+class Gas extends Component {
+  static navigationOptions = {
+    headerStyle: { backgroundColor: '#4B8B9D' }
+  }
+  
+  render() {
+    const data = [ 50, 10, 40, 95, -4, -24, 85, 91, 35, 53, -53, 24, 50, -20, -80 ]
+    
+    const Shadow = ({ line }) => (
+        <Path
+            key={'shadow'}
+            y={2}
+            d={line}
+            fill={'none'}
+            strokeWidth={4}
+            stroke={'#4B8B9D'}
+        />
+    )
     return (   
       <Container style={styles.container}>
+          <Text style={styles.cardTextH}>Miles Per Gallon</Text>
         <LineChart
           style={ { height: 200 } }
           data={ data }
@@ -55,19 +60,24 @@ const Gas = () => {
             </CardItem>
            </Card>
         </Content>
+           <GasHistory />
+           <Text style={styles.cardText1}> $2310.30 </Text>
       </Container>
       
     )
+  }
 }
 
 const styles = StyleSheet.create({
   container: {
-      backgroundColor: '#E5DEC0'
+      backgroundColor: '#E5DEC0',
+      textAlign: 'center'
 
   },
   cardContainer: {
     backgroundColor: '#76AFB8',
-    justifyContent: 'center', alignItems: 'center'  
+    justifyContent: 'center', alignItems: 'center',
+
 
   },
   button: {
@@ -79,14 +89,32 @@ const styles = StyleSheet.create({
     color: '#4B8B9D'
 }, 
 cardText:{
-  color: '#FBF9F7'
+  color: '#FBF9F7',
+  textAlign: 'center',
+  fontWeight: 'bold',
+  fontSize: 20
+
+}, 
+cardTextH:{
+  color: '#4B8B9D',
+  textAlign: 'center',
+  fontWeight: 'bold',
+  fontSize: 20
+
 }, 
 title: {
   color: '#4B8B9D',
   textAlign: 'center',
   fontWeight: 'bold',
   margin: 92
-}
+},
+cardText1:{
+  color: '#4B8B9D',
+  fontSize: 25,
+  textAlign: 'center',
+  marginBottom: 25,
+  fontWeight: 'bold',
+},
 
 })
 

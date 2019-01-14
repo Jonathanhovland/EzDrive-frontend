@@ -6,6 +6,7 @@ import { Container, Header, Content, Card, CardItem, Text, Left, Right, Button, 
 
 const CostCard = () =>  {
     return (
+
         <Container>
             <Content>
                 <Card>

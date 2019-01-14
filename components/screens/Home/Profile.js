@@ -86,7 +86,8 @@ const Profile = () =>  {
                 fontWeight: 'bold'
               }, 
             cardText:{
-                color: '#FBF9F7'
+                color: '#FBF9F7',
+                fontSize: 20
             }, 
             cards: {
                 backgroundColor: '#76AFB8',

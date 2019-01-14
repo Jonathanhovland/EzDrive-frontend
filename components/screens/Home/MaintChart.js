@@ -32,17 +32,21 @@ const MaintChart = () => {
             container: {
                   backgroundColor: '#E5DEC0',
                   height: 200,
+                  marginBottom: -10
             },
             text1: {
               color: '#4B8B9D',
               textAlign: 'center',
               marginTop: -25,
-              marginBottom: 3
+              marginBottom: 3,
+              fontWeight: 'bold'
            },
            text2: {
             color: '#4B8B9D',
             textAlign: 'center',
-            marginBottom: 5
+            marginBottom: 5,
+            fontWeight: 'bold',
+            marginBottom: -2
          },
 
             })

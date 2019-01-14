@@ -1,8 +1,9 @@
 import React, { Component } from "react"
 import { View, StyleSheet, Image, KeyboardAvoidingView, TouchableOpacity } from "react-native"
-import { Container, Header, Content, Card, CardItem, Text, Icon, Right, Button } from 'native-base';
+import { Container, Header, Content, Card, CardItem, Text, Icon, Right, Button, Footer } from 'native-base';
 import { Actions } from "react-native-router-flux"
 import { LineChart, Path, Grid } from 'react-native-svg-charts'
+import HFooter from "../Home/HFooter";
 
 
 const Gas = () => {
@@ -55,20 +56,24 @@ const Gas = () => {
            </Card>
         </Content>
       </Container>
+      
     )
 }
 
 const styles = StyleSheet.create({
   container: {
-      backgroundColor: '#E5DEC0',
+      backgroundColor: '#E5DEC0'
 
   },
   cardContainer: {
     backgroundColor: '#76AFB8',
+    justifyContent: 'center', alignItems: 'center'  
 
   },
   button: {
-    backgroundColor: '#FBF9F7'
+    backgroundColor: '#FBF9F7',
+    justifyContent: 'center', alignItems: 'center'  
+
   },
   buttonText:{
     color: '#4B8B9D'

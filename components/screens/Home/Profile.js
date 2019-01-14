@@ -17,21 +17,16 @@ const Profile = () =>  {
                 </Left>
                 <Body style={styles.headerBody}>
                     <Text style={styles.cardTextH}>2016</Text>
-                    <Text style={styles.cardTextH}>Toyota 4Runner</Text>
+                    <Text style={styles.cardTextH}>Toyota</Text>
+                    <Text style={styles.cardTextH}>4Runner</Text>
+
                 </Body>
-                <Right style={{paddingBottom: 30}}>
+                <Right style={{paddingBottom: 33}}>
                 <Text style={styles.cardTextH2} note>11/2016</Text>
                 </Right>
             </Header>
             <Content style={styles.card}>
                 <Card >
-                {/* <CardItem style={styles.cardHeader}>
-                    <Text style={styles.cardText}>Info                  </Text>
-                    <Text style={styles.cardText}>      Due Date</Text>
-                    <Right>
-                        <Text  style={styles.cardText}>$    </Text>
-                    </Right>
-                    </CardItem> */}
                     <CardItem style={styles.cards}>
                     <Text style={styles.cardText}>Payment              </Text>
                     <Text style={styles.cardText}>Monthly</Text>
@@ -62,7 +57,7 @@ const Profile = () =>  {
         const styles = StyleSheet.create({
             container: {
                 backgroundColor: '#E5DEC0',
-                marginBottom: -20
+                // marginBottom: -20
         
           
             },
@@ -76,17 +71,19 @@ const Profile = () =>  {
             },
             headerBody: {
                 justifyContent: 'center', alignItems: 'center',
-                paddingBottom: 28
+                paddingBottom: 20
             },
             cardHeader: {
               backgroundColor: '#76AFB8',
           
             },
             cardTextH:{
-                color: '#4B8B9D'
+                color: '#4B8B9D',
+                fontWeight: 'bold'
               }, 
               cardTextH2:{
-                color: '#76AFB8'
+                color: '#76AFB8',
+                fontWeight: 'bold'
               }, 
             cardText:{
                 color: '#FBF9F7'

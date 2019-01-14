@@ -27,17 +27,14 @@ class Home extends Component {
     
     render() {
         return (
+    
             <Container style={styles.container}>
               <Profile />
-             <MaintChart style={styles.container}/>
+            <MaintChart style={styles.container}/>
+             {/* <CostCard /> */}
+
             <HFooter></HFooter> 
             </Container>
-            // <Container>
-
-            // </Container>
-            // <Container>
-
-            // </Container>
             )
           }
         }

@@ -1,6 +1,6 @@
 import React from "react"
-import { Container, Header, Content, Card, CardItem, Text, Left, Right, Thumbnail, Body } from "native-base"
 import {  StyleSheet } from "react-native"
+import { Container, Header, Content, Card, CardItem, Text, Left, Right, Thumbnail, Body } from "native-base"
 
 
 const Profile = () =>  {
@@ -88,12 +88,13 @@ const Profile = () =>  {
             fontWeight: 'bold'
         },
         cardText:{
-            color: '#FBF9F7'
+            color: '#FBF9F7',
+            paddingRight: 12
         }, 
         cards: {
             backgroundColor: '#76AFB8'
         }
     })
             
-    
+
 export default Profile

@@ -1,15 +1,11 @@
-// import React, { Component } from "react"
-import {  StyleSheet, Image} from "react-native"
+import React, { Component } from "react"
+import { StyleSheet } from "react-native"
+import { Container, Button } from "native-base"
 import { Actions } from "react-native-router-flux"
-import React, { Component } from 'react';
-import { Container, Header, Content, Card, CardItem, Text, Left, Right, Button, Thumbnail, Body, Footer, FooterTab, Icon, View } from 'native-base';
+
 import Profile from "./Profile";
 import MaintChart from "./MaintChart";
-import CostCard from "./Miles";
 import HFooter from "./HFooter";
-
-
-
 
 
 class Home extends Component {
@@ -23,26 +19,25 @@ class Home extends Component {
           color="#FBF9F7"
         />
       )
-    }
+  }
     
-    render() {
-        return (
-    
-            <Container style={styles.container}>
-              <Profile />
-            <MaintChart style={styles.container}/>
-            <HFooter></HFooter> 
-            </Container>
-            )
-          }
-        }
+  render() {
+    return (
+      <Container style={styles.container}>
+        <Profile />
+        <MaintChart/>
+        <HFooter></HFooter> 
+      </Container>
+    )
+  }
+}
         
-        const styles = StyleSheet.create({
-            container: {
-                  backgroundColor: '#E5DEC0'
-              }
-            })
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: '#E5DEC0'
+  }
+})
             
             
-            
-            export default Home
+export default Home

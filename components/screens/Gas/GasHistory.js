@@ -28,7 +28,6 @@ const GasHistory = () => {
               </Right>
              </CardItem>
              <CardItem style={styles.cardContainer}>
-              {/* <Icon active name="logo-googleplus" /> */}
               <Left>
 
               <Text style={styles.cardText}>1/1</Text>
@@ -40,7 +39,6 @@ const GasHistory = () => {
               </Right>
              </CardItem>
              <CardItem style={styles.cardContainer}>
-              {/* <Icon active name="logo-googleplus" /> */}
               <Left>
 
               <Text style={styles.cardText}>12/27</Text>
@@ -52,7 +50,6 @@ const GasHistory = () => {
               </Right>
              </CardItem>
              <CardItem style={styles.cardContainer}>
-              {/* <Icon active name="logo-googleplus" /> */}
               <Left>
 
               <Text style={styles.cardText}>12/20</Text>

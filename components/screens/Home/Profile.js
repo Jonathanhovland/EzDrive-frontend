@@ -3,7 +3,7 @@ import { Actions } from "react-native-router-flux"
 import { ProgressCircle } from 'react-native-svg-charts'
 import { Container, Header, Content, Card, CardItem, Text, Left, Right, Button, Thumbnail, Body } from 'native-base'
 import {  StyleSheet, Image} from "react-native"
-import CostCard from "./CostCard";
+import CostCard from "./Miles";
 import MaintChart from "./MaintChart";
 
 
@@ -57,7 +57,7 @@ const Profile = () =>  {
         const styles = StyleSheet.create({
             container: {
                 backgroundColor: '#E5DEC0',
-                // marginBottom: -20
+                marginBottom: -20
         
           
             },
@@ -87,7 +87,7 @@ const Profile = () =>  {
               }, 
             cardText:{
                 color: '#FBF9F7',
-                fontSize: 20
+                // fontSize: 20
             }, 
             cards: {
                 backgroundColor: '#76AFB8',

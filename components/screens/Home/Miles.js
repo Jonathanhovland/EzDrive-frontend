@@ -6,7 +6,7 @@ import { View, StyleSheet, Image, KeyboardAvoidingView, TouchableOpacity } from 
 
 
 
-const CostCard = () =>  {
+const Miles = () =>  {
     return (
 
         <Container style={styles.container}>
@@ -49,11 +49,12 @@ const styles = StyleSheet.create({
   },
   cardText1:{
     color: '#FBF9F7',
-    fontSize: 25
+    fontSize: 20,
+    fontWeight: "bold"
   },
   cardText2:{
     color: '#4B8B9D',
-    fontSize: 20  },
+    },
   button: {
     justifyContent: 'center', alignItems: 'center'  
   }
@@ -61,4 +62,4 @@ const styles = StyleSheet.create({
   })
             
             
-export default CostCard
+export default Miles

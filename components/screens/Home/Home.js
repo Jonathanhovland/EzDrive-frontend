@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 import { Container, Header, Content, Card, CardItem, Text, Left, Right, Button, Thumbnail, Body, Footer, FooterTab, Icon, View } from 'native-base';
 import Profile from "./Profile";
 import MaintChart from "./MaintChart";
-import CostCard from "./CostCard";
+import CostCard from "./Miles";
 import HFooter from "./HFooter";
 
 
@@ -31,8 +31,6 @@ class Home extends Component {
             <Container style={styles.container}>
               <Profile />
             <MaintChart style={styles.container}/>
-             {/* <CostCard /> */}
-
             <HFooter></HFooter> 
             </Container>
             )

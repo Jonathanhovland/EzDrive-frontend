@@ -14,7 +14,6 @@ class Maint extends Component {
             <Container style={{  backgroundColor: '#E5DEC0' }}>
             <OilChange style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#E5DEC0' }}/>
             <Totals />
-            <Text >42,459</Text>
 
             </Container>
         )

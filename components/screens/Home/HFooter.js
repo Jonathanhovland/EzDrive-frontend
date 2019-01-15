@@ -7,9 +7,9 @@ import Miles from "./Miles"
 
 const HFooter = () => {
     return (
-      <Container style={styles.container} >
+      <Container>
         <Miles />
-        <Footer style={styles.footer}>
+        <Footer style={styles.container}>
           <FooterTab>
             <Button vertical
               onPress={() => Actions.gas()}>
@@ -32,18 +32,15 @@ const HFooter = () => {
     )
   }
 
-  const styles = StyleSheet.create({
-    container: {
-      backgroundColor: '#4B8B9D',
-      height: 40
-    },
-    footer: {
-      backgroundColor: '#E5DEC0',
-      height: 40
-    },
-    button: {
-      color: '#FBF9F7'
-   }
-  })
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: "#4B8B9D",
+    height: 40
+  },
+  button: {
+    color: "#FBF9F7"
+  }
+})
 
-  export default HFooter
+
+export default HFooter

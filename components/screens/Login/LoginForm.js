@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { View, Text, TextInput, TouchableOpacity, Alert, Button ,StyleSheet ,StatusBar} from 'react-native'
+import React from "react"
+import { View, Text, TextInput, TouchableOpacity, StyleSheet ,StatusBar } from "react-native"
 import { Actions } from "react-native-router-flux"
 
 
@@ -21,48 +21,47 @@ const LoginForm = () => {
                 placeholderTextColor="#FBF9F7" 
                 secureTextEntry/>
             <TouchableOpacity style={styles.buttonContainer} onPress={() => Actions.home()}>
-                <Text  style={styles.buttonText}>LOGIN</Text>
+                <Text  style={styles.buttonText}>Login</Text>
             </TouchableOpacity> 
             <TouchableOpacity style={styles.buttonContainerT} onPress={() => Actions.signup()}>
-                <Text  style={styles.buttonTextT}>REGISTER</Text>
+                <Text  style={styles.buttonTextT}>Register</Text>
             </TouchableOpacity>
         </View>
     )
 }
 
-
 const styles = StyleSheet.create({
     container: {
-     padding: 20,
+        padding: 20,
     },
     input:{
         height: 40,
-        backgroundColor: '#4B8B9D',
+        backgroundColor: "#4B8B9D",
         marginBottom: 10,
         padding: 10,
-        color: '#FBF9F7',
-        textAlign: 'center'
-
+        color: "#FBF9F7",
+        textAlign: "center"
     },
     buttonContainer:{
-        backgroundColor: '#AFD1D1',
+        backgroundColor: "#AFD1D1",
         paddingVertical: 15,
         marginBottom: 10
     },
     buttonContainerT:{
-        backgroundColor: '#FBF9F7',
+        backgroundColor: "#FBF9F7",
         paddingVertical: 15
     },
     buttonText:{
-        color: '#FBF9F7',
-        textAlign: 'center',
-        fontWeight: '500'
+        color: "#FBF9F7",
+        textAlign: "center",
+        fontWeight: "500"
     }, 
     buttonTextT:{
-        color: '#4B8B9D',
-        textAlign: 'center',
-        fontWeight: '500'
+        color: "#4B8B9D",
+        textAlign: "center",
+        fontWeight: "500"
     }
 })
+
 
 export default LoginForm

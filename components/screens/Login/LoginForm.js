@@ -13,18 +13,18 @@ const LoginForm = () => {
                 autoCorrect={false} 
                 keyboardType='email-address' 
                 returnKeyType="next" 
-                placeholder='USERNAME' 
+                placeholder='Username' 
                 placeholderTextColor="#FBF9F7"/>
             <TextInput style = {styles.input}   
                 returnKeyType="go" ref={(input)=> this.passwordInput = input} 
-                placeholder='PASSWORD' 
+                placeholder='Password' 
                 placeholderTextColor="#FBF9F7" 
                 secureTextEntry/>
             <TouchableOpacity style={styles.buttonContainer} onPress={() => Actions.home()}>
                 <Text  style={styles.buttonText}>Login</Text>
             </TouchableOpacity> 
             <TouchableOpacity style={styles.buttonContainerT} onPress={() => Actions.signup()}>
-                <Text  style={styles.buttonTextT}>Register</Text>
+                <Text  style={styles.buttonTextT}>Sign Up</Text>
             </TouchableOpacity>
         </View>
     )

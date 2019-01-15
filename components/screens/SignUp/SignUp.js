@@ -1,8 +1,9 @@
 import React, { Component } from "react"
-import { View, Text, TextInput, TouchableOpacity, Alert, Button ,StyleSheet ,StatusBar, Image} from "react-native"
+import { View, Text, TextInput, TouchableOpacity, Button ,StyleSheet ,StatusBar, Image} from "react-native"
 import { Actions } from "react-native-router-flux"
 
 class SignUp extends Component {
+
     static navigationOptions = {
         headerStyle: { backgroundColor: "#4B8B9D" },
         headerLeft: (
@@ -13,11 +14,12 @@ class SignUp extends Component {
             />
         )
     }
+
     render() {
         return (
             <View style={styles.container}>
-            <StatusBar barStyle="light-content"/>
-            <Image resizeMode="contain" style={styles.logo} source={require("../../../img/logo3.png")} />
+                <StatusBar barStyle="light-content"/>
+                <Image resizeMode="contain" style={styles.logo} source={require("../../../img/logo3.png")} />
             <View style={styles.inputContainer}>
             <TextInput style = {styles.inputDark} 
                 autoCapitalize="none" 
@@ -25,45 +27,45 @@ class SignUp extends Component {
                 autoCorrect={false} 
                 keyboardType='email-address' 
                 returnKeyType="next" 
-                placeholder="EMAIL" 
+                placeholder="Email" 
                 placeholderTextColor="#FBF9F7"/>
             <TextInput style = {styles.inputDark} 
                 autoCapitalize="none" 
                 onSubmitEditing={() => this.passwordInput.focus()} 
                 autoCorrect={false} 
-                placeholder="USERNAME" 
+                placeholder="Username" 
                 placeholderTextColor="#FBF9F7"/>
             <TextInput style = {styles.inputMed}   
                 returnKeyType="go" ref={(input)=> this.passwordInput = input} 
-                placeholder='PASSWORD' 
+                placeholder='Password' 
                 placeholderTextColor="#FBF9F7" 
                 secureTextEntry/>
             <TextInput style = {styles.inputMed} 
                 autoCapitalize="none" 
                 onSubmitEditing={() => this.passwordInput.focus()} 
                 autoCorrect={false} 
-                placeholder="MAKE" 
+                placeholder="Make" 
                 placeholderTextColor="#FBF9F7"/>
             <TextInput style = {styles.inputMed} 
                 autoCapitalize="none" 
                 onSubmitEditing={() => this.passwordInput.focus()} 
                 autoCorrect={false} 
-                placeholder="MODEL" 
+                placeholder="Model" 
                 placeholderTextColor="#FBF9F7"/>
             <TextInput style = {styles.inputLight} 
                 autoCapitalize="none" 
                 onSubmitEditing={() => this.passwordInput.focus()} 
                 autoCorrect={false} 
-                placeholder="YEAR" 
+                placeholder="Year" 
                 placeholderTextColor="#FBF9F7"/>
             <TextInput style = {styles.inputLight} 
                 autoCapitalize="none" 
                 onSubmitEditing={() => this.passwordInput.focus()} 
                 autoCorrect={false} 
-                placeholder="MILES" 
+                placeholder="Miles" 
                 placeholderTextColor="#FBF9F7"/>
             <TouchableOpacity style={styles.buttonContainer} onPress={() => Actions.login()}>
-                <Text  style={styles.buttonText}>SIGN UP</Text>
+                <Text  style={styles.buttonText}>Sign Up</Text>
             </TouchableOpacity>
             </View>
         </View>
@@ -85,7 +87,7 @@ const styles = StyleSheet.create({
         backgroundColor: "#4B8B9D",
         marginTop: 10,
         padding: 10,
-        color: '#FBF9F7',
+        color: "#FBF9F7",
         textAlign: "center"
     },
     inputMed: {
@@ -93,7 +95,7 @@ const styles = StyleSheet.create({
         backgroundColor: "#76AFB8",
         marginTop: 10,
         padding: 10,
-        color: '#FBF9F7',
+        color: "#FBF9F7",
         textAlign: "center"
     },
     inputLight: {
@@ -101,7 +103,7 @@ const styles = StyleSheet.create({
         backgroundColor: "#AFD1D1",
         marginTop: 10,
         padding: 10,
-        color: '#FBF9F7',
+        color: "#FBF9F7",
         textAlign: "center"
     },
     logo: {

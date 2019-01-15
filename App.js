@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Button, View, Text } from 'react-native';
 import { Router, Scene } from "react-native-router-flux"
 
 import Login from './components/screens/Login/Login';

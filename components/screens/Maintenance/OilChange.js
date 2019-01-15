@@ -14,22 +14,28 @@ const OilChange = () => {
 
 
           return (
-            <View>
+            <Container style={styles.container}>
                 
 
-            <ProgressBar progress={0.3} width={300} height={15} style={styles.progressBar}/>
+                <ProgressBar progress={0.8} width={370} height={15} style={styles.progressBar}/>
           
-                <Right>
+    
 
-            <Text style={ styles.text2}> 1245 Miles</Text>
-                </Right>
-                <ProgressBar progress={0.3} width={300} height={15} style={styles.progressBar}/>
-          
-                <Right>
+                <Text style={ styles.text2}> Oil Change </Text>
+                <ProgressBar progress={0.3} width={370} height={15} style={styles.progressBar}/>
+                <Text style={ styles.text2}> Tire Rotation </Text>
+                <ProgressBar progress={0.6} width={370} height={15} style={styles.progressBar}/>
+                <Text style={ styles.text2}> 60 K </Text>
+                <ProgressBar progress={0.5} width={370} height={15} style={styles.progressBar}/>
+                <Text style={ styles.text2}> Tires </Text>
+                <ProgressBar progress={0.5} width={370} height={15} style={styles.progressBar}/>
+                <Text style={ styles.text2}> Filters</Text>
+            
 
-            <Text style={ styles.text2}> 1245 Miles</Text>
-                </Right>
-            </View>
+                <CardItem footer button style={styles.button} onPress={() => Actions.login()}>
+              <Text style={styles.buttonText}>Track New Maintenance</Text>
+            </CardItem>
+            </Container>
               )
             }
   
@@ -52,6 +58,12 @@ const OilChange = () => {
             fontWeight: 'bold',
             fontSize: 20
          },
+         button: {
+            justifyContent: 'center', alignItems: 'center',
+            color: '#4B8B9D',
+            fontSize: 20  
+              
+          }
 
             })
             

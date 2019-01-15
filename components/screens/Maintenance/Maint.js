@@ -2,6 +2,8 @@ import React, { Component } from "react"
 import { View, Text, StyleSheet, Image, KeyboardAvoidingView, Button } from "react-native"
 import { Actions } from "react-native-router-flux"
 import OilChange from "./OilChange";
+import Totals from "./Totals";
+import { Container } from "native-base";
 
 class Maint extends Component {
     static navigationOptions = {
@@ -9,9 +11,12 @@ class Maint extends Component {
     }
     render() {
         return (
-            <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#E5DEC0' }}>
-            <OilChange />
-            </View>
+            <Container style={{  backgroundColor: '#E5DEC0' }}>
+            <OilChange style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: '#E5DEC0' }}/>
+            <Totals />
+            <Text >42,459</Text>
+
+            </Container>
         )
     }
 }

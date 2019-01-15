@@ -6,21 +6,34 @@ import { View, StyleSheet, Image, KeyboardAvoidingView, TouchableOpacity } from 
 
 
 
-const CostCard = () =>  {
+const Totals = () =>  {
     return (
 
         <Container style={styles.container}>
             <Content>
             <Card>
              <CardItem style={styles.cardContainer}>
-              <Text style={styles.cardText1}>Miles</Text>
+              <Left>
+
+              <Text style={styles.cardText1}>Last Maint.</Text>
+              </Left>
+              <Text style={styles.cardText1}>10/13/18</Text>
+              <Right>
+
+            <Text style={styles.cardText1}>$57.30</Text>
+            </Right>
              </CardItem>
-            <CardItem style={styles.cardContainer}>
-              <Text style={styles.cardText1}>42,459</Text>
+             <CardItem style={styles.cardContainer}>
+              <Left>
+
+              <Text style={styles.cardText1}>Next Maint.</Text>
+              </Left>
+              <Text style={styles.cardText1}>1245 Miles</Text>
+              <Right>
+
+            <Text style={styles.cardText1}>$120.00</Text>
+            </Right>
              </CardItem>
-             <CardItem footer button style={styles.button} onPress={() => Actions.login()}>
-              <Text style={styles.cardText2}>Schedule Maintenance</Text>
-            </CardItem>
            </Card>
         </Content>
         </Container>
@@ -30,7 +43,7 @@ const CostCard = () =>  {
 const styles = StyleSheet.create({
     container: {
         backgroundColor: '#E5DEC0',
-        marginTop: 0
+        marginTop: -75
 
   
     },
@@ -49,11 +62,10 @@ const styles = StyleSheet.create({
   },
   cardText1:{
     color: '#FBF9F7',
-    fontSize: 25
   },
   cardText2:{
     color: '#4B8B9D',
-    fontSize: 20  },
+},
   button: {
     justifyContent: 'center', alignItems: 'center'  
   }
@@ -61,4 +73,4 @@ const styles = StyleSheet.create({
   })
             
             
-export default CostCard
+export default Totals

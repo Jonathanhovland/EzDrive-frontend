@@ -1,50 +1,31 @@
-import React from 'react'
-import { StyleSheet } from 'react-native';
-import CostChart from './CostChart';
-import AverageChart from './AverageChart';
-import { View, Container, Button } from 'native-base';
-import SummaryData from './SummaryData';
+import React, { Component } from "react"
+import { StyleSheet } from "react-native"
+import { Container } from "native-base"
 
+import SummaryData from "./SummaryData"
+import CostChart from "./CostChart"
 
-class Summary extends React.PureComponent {
+class Summary extends Component {
 
     static navigationOptions = {
-        headerStyle: { backgroundColor: '#4B8B9D' },
-        // headerLeft: (
-        //   <Button
-        //     onPress={() => Actions.login()}
-        //     title="Sign Out"
-        //     color="#FBF9F7"
-        //   />
-        // ),
-        //   headerRight: (
-        //     <Button
-        //       onPress={() => Actions.maint()}
-        //       title="Maintenance"
-        //       color="#FBF9F7"
-        //     />
-        //   )
+        headerStyle: { backgroundColor: "#4B8B9D" }
       }
 
     render() {
         return (
             <Container style={styles.container}>
-            <CostChart />
-            <SummaryData />
-            {/* <AverageChart /> */}
+                <CostChart />
+                <SummaryData />
             </Container>
         )
     }
-
 }
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#E5DEC0',
-  
+        backgroundColor: "#E5DEC0"
     }
-  
-  })
+})
 
 
 export default Summary

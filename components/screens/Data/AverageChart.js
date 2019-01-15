@@ -1,7 +1,7 @@
-import React from 'react'
-import { View } from 'react-native'
-import { BarChart, Grid } from 'react-native-svg-charts'
-import { Text } from 'react-native-svg'
+import React from "react"
+import { View } from "react-native"
+import { BarChart, Grid } from "react-native-svg-charts"
+import { Text } from "react-native-svg"
 
 const AverageChart = () => {
 
@@ -15,8 +15,8 @@ const AverageChart = () => {
                 x={ value > CUT_OFF ? x(0) + 10 : x(value) + 10 }
                 y={ y(index) + (bandwidth / 2) }
                 fontSize={ 14 }
-                fill={ value > CUT_OFF ? '#FBF9F7' : '#4B8B9D' }
-                alignmentBaseline={ 'middle' }
+                fill={ value > CUT_OFF ? "#FBF9F7" : "#4B8B9D" }
+                alignmentBaseline={ "middle" }
             >
                 {value}
             </Text>
@@ -24,12 +24,12 @@ const AverageChart = () => {
     )
 
     return (
-        <View style={{ flexDirection: 'row', height: 200, paddingVertical: 16}}>
+        <View style={{ flexDirection: "row", height: 200, paddingVertical: 16}}>
             <BarChart
                 style={{ flex: 1, marginLeft: 8 }}
                 data={data}
                 horizontal={true}
-                svg={{ fill: '#76AFB8' }}
+                svg={{ fill: "#76AFB8" }}
                 contentInset={{ top: 10, bottom: 10 }}
                 spacing={0.2}
                 gridMin={0}

@@ -23,8 +23,7 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: "#E5DEC0",
     height: 200,
-    marginBottom: 0,
-    marginTop: 0
+    marginBottom: 0
   },
   text: {
     color: "#4B8B9D",
@@ -32,12 +31,12 @@ const styles = StyleSheet.create({
     marginTop: 0,
     marginBottom: 3,
     fontWeight: "bold",
-    fontSize: 18
+    fontSize: 20
   },
   text2: {
     color: "#4B8B9D",
     textAlign: "center",
-    marginBottom: 5,
+    marginBottom: 20,
     fontWeight: "bold",
     fontSize: 18
   }

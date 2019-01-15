@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 import { View, StyleSheet, Image, KeyboardAvoidingView } from "react-native"
+import { Button } from "native-base"
+
 
 import LoginForm from "./LoginForm"
 
@@ -7,7 +9,14 @@ import LoginForm from "./LoginForm"
 class Login extends Component {
     
     static navigationOptions = {
-        headerStyle: { backgroundColor: "#4B8B9D" },
+        headerStyle: { backgroundColor: "#4B8B9D", color: "#fff"},
+        headerLeft: (
+            <Button
+                onPress={() => Actions.home()}
+                title="Home"
+                color="#FBF9F7"
+            />
+        )
     }
 
     render() {

@@ -6,7 +6,7 @@ import { LineChart, Path, Grid } from "react-native-svg-charts"
 
 const MpgChart = () => { 
 
-    const data = [ 50, 10, 40, 95, -4, -24, 85, 91, 35, 53, -53, 24, 50, -20, -80 ]
+    const data = [ 5, 15, 14, 16.2, 14, 17, 14 ]
     
     const Shadow = ({ line }) => (
         <Path
@@ -21,12 +21,12 @@ const MpgChart = () => {
 
     return (   
       <Container style={styles.container}>
-        <Text>Miles Per Gallon</Text>
+        <Text style={styles.text}>17.2 MPG</Text>
         <LineChart
-            style={ { height: 200 } }
+            style={ { height: 200, width: 400 } }
             data={ data }
             svg={{ stroke: "rgb(134, 65, 244)" }}
-            contentInset={ { top: 20, bottom: 20 } }
+            contentInset={ { top: 20, bottom: 10 } }
         >
         <Grid/>
         <Shadow/>
@@ -39,6 +39,12 @@ const styles = StyleSheet.create({
   container: {
       backgroundColor: "#E5DEC0",
       textAlign: "center"
+  },
+  text: {
+    textAlign: "center",
+    color: "#4B8B9D",
+    fontWeight: "bold",
+    fontSize: 20
   }
 })
 

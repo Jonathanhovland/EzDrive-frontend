@@ -1,6 +1,7 @@
 import React, { Component } from "react"
-import { StyleSheet } from "react-native"
+import { StyleSheet, Button } from "react-native"
 import { Container, Text } from "native-base"
+import { Actions } from "react-native-router-flux"
 
 import GasHistory from "./GasHistory"
 import GasForm from "./GasForm"
@@ -10,8 +11,22 @@ import MpgChart from "./MpgChart"
 class Gas extends Component {
   
   static navigationOptions = {
-    headerStyle: { backgroundColor: "#4B8B9D" }
-  }
+    headerStyle: { backgroundColor: '#4B8B9D' },
+      headerLeft: (
+          <Button
+              onPress={() => Actions.login()}
+              title="Home"
+              color="#FBF9F7"
+          />
+      ),
+      headerRight: (
+        <Button
+        title="Gas"
+        color="#FBF9F7"
+    />
+      )
+
+}
   
   render() {
     return (   

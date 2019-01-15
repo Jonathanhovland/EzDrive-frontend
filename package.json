@@ -15,8 +15,11 @@
     "react-native": "0.57.8",
     "react-native-gesture-handler": "^1.0.12",
     "react-native-navigation": "^2.6.0",
+    "react-native-phone-call": "^1.0.9",
     "react-native-progress": "^3.5.0",
+    "react-native-progress-bar-animated": "^1.0.6",
     "react-native-router-flux": "^4.0.6",
+    "react-native-simple-progressbar": "git+https://github.com/httpdeveloper/react-native-simple-progressbar.git",
     "react-native-svg": "^8.0.10",
     "react-native-svg-charts": "^5.2.0",
     "react-navigation": "^3.0.9"

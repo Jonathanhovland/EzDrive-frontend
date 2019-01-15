@@ -57,7 +57,7 @@ const Profile = () =>  {
     const styles = StyleSheet.create({
         container: {
             backgroundColor: "#E5DEC0",
-            marginBottom: -20
+            marginBottom: 20
         },
         header: {
             backgroundColor: "#E5DEC0",
@@ -89,7 +89,8 @@ const Profile = () =>  {
         },
         cardText:{
             color: '#FBF9F7',
-            paddingRight: 12
+            paddingRight: 12,
+            fontSize: 20
         }, 
         cards: {
             backgroundColor: '#76AFB8'

@@ -15,12 +15,7 @@ const OilChange = () => {
 
           return (
             <Container style={styles.container}>
-                
-
                 <ProgressBar progress={0.8} width={370} height={15} style={styles.progressBar}/>
-          
-    
-
                 <Text style={ styles.text2}> Oil Change </Text>
                 <ProgressBar progress={0.3} width={370} height={15} style={styles.progressBar}/>
                 <Text style={ styles.text2}> Tire Rotation </Text>
@@ -47,10 +42,12 @@ const OilChange = () => {
                   marginBottom: 0
             },
             progressBar: {
-              color: 'pink',
+              backgroundColor: 'red',
+              color: 'green',
               textAlign: 'center',
               marginTop: 10,
-           },
+              borderColor: 'pink'
+            },
            text2: {
             color: '#4B8B9D',
             textAlign: 'center',

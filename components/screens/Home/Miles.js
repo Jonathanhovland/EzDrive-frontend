@@ -2,7 +2,12 @@ import React from "react"
 import { StyleSheet } from "react-native"
 import { Container, Content, Card, CardItem, Text } from "native-base"
 import { Actions } from "react-native-router-flux"
+import call from 'react-native-phone-call'
 
+const args = {
+  number: '3073333654', // String value with the number to call
+  prompt: false // Optional boolean property. Determines if the user should be prompt prior to the call 
+}
 
 const Miles = () =>  {
   return (
@@ -15,7 +20,7 @@ const Miles = () =>  {
           <CardItem style={styles.cardContainer}>
             <Text style={styles.cardText}>42,459</Text>
           </CardItem>
-          <CardItem footer button style={styles.button} onPress={() => Actions.login()}>
+          <CardItem footer button style={styles.button} onPress={() => call(args).catch(console.error)}>
             <Text style={styles.cardText2}>Schedule Maintenance</Text>
           </CardItem>
           </Card>

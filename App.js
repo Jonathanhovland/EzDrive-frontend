@@ -1,5 +1,6 @@
-import React from 'react';
-import { Router, Scene } from "react-native-router-flux"
+import React, { Component } from "react"
+
+import { Router, Scene, titleStyle } from "react-native-router-flux"
 
 import Login from './components/screens/Login/Login';
 import Home from './components/screens/Home/Home';
@@ -10,45 +11,41 @@ import Gas from './components/screens/Gas/Gas';
 
 
 
-export default class App extends React.Component {
+class App extends Component {
   render() {
     return (
-      <Router hideNavBar= "true">
+      <Router hideNavBar= "true" >
         <Scene key="root">
           <Scene
             key="login"
             component={Login}
-            title="Login"
             initial
           />
           <Scene
             key="home"
             component={Home}
-            title="Home"
           />
           <Scene
             key="signup"
             component={SignUp}
-            title="SignUp"
           />
           <Scene
             key="gas"
             component={Gas}
-            title="Gas"
           />
           <Scene
             key="maint"
             component={Maint}
-            title="Maint"
           />
           <Scene
             key="data"
             component={Data}
-            title="Data"
-          />
-        
+            />
         </Scene>
       </Router>
     )
   }
 }
+
+
+export default App

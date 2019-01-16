@@ -39,14 +39,14 @@ const OilChange = () => {
             container: {
                   backgroundColor: '#E5DEC0',
                   height: 200,
-                  marginBottom: 0
+                  marginBottom: 50
             },
             progressBar: {
-              backgroundColor: 'red',
+              backgroundColor: '#FBF9F7',
               color: 'green',
               textAlign: 'center',
               marginTop: 10,
-              borderColor: 'pink'
+              borderColor: '#FBF9F7'
             },
            text2: {
             color: '#4B8B9D',

@@ -11,7 +11,7 @@ const SummaryData = () =>  {
           <Card>
             <CardItem style={styles.cardContainer}>
               <Left>
-                <Text style={styles.cardText}>Payments</Text>
+                <Text style={styles.cardText}>Payments  (49%)</Text>
               </Left>
               <Right>
                 <Text style={styles.cardText}>$10,203.01</Text>
@@ -19,7 +19,7 @@ const SummaryData = () =>  {
              </CardItem>
              <CardItem style={styles.cardContainer}>
               <Left>
-                <Text style={styles.cardText}>Insurance</Text>
+                <Text style={styles.cardText}>Insurance  (20%)</Text>
               </Left>
               <Right>
                 <Text style={styles.cardText}>$4000.08</Text>
@@ -27,7 +27,7 @@ const SummaryData = () =>  {
              </CardItem>
              <CardItem style={styles.cardContainer}>
               <Left>
-                <Text style={styles.cardText}>Registration</Text>
+                <Text style={styles.cardText}>Registration  (5%)</Text>
               </Left>
               <Right>
                 <Text style={styles.cardText}>$900.76</Text>
@@ -35,7 +35,7 @@ const SummaryData = () =>  {
              </CardItem>
              <CardItem style={styles.cardContainer}>
               <Left>
-                <Text style={styles.cardText}>Maintenance</Text>
+                <Text style={styles.cardText}>Maintenance (11%)</Text>
               </Left>
               <Right>
                 <Text style={styles.cardText}>$2300.98</Text>
@@ -43,7 +43,7 @@ const SummaryData = () =>  {
              </CardItem>
              <CardItem style={styles.cardContainer}>
               <Left>
-                <Text style={styles.cardText}>Gas</Text>
+                <Text style={styles.cardText}>Gas  (15%)</Text>
               </Left>
               <Right>
                 <Text style={styles.cardText}>$3,203.01</Text>
@@ -76,7 +76,8 @@ const styles = StyleSheet.create({
   },
   cardText:{
     color: "#FBF9F7",
-    fontSize: 20
+    fontSize: 20,
+    paddingRight: 10
   },
   cardText2:{
     color: "#FBF9F7",

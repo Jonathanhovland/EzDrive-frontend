@@ -9,6 +9,9 @@ const GasForm = () => {
         <Content>
             <Card>
                 <CardItem style={styles.cardContainer}>
+                    <Text style={styles.cardText}>1/10/2019</Text>
+                </CardItem>
+                <CardItem style={styles.cardContainer}>
                     <Text style={styles.cardText}>Mileage:  42,459</Text>
                 </CardItem>
                 <CardItem style={styles.cardContainer}>
@@ -16,9 +19,6 @@ const GasForm = () => {
                 </CardItem>
                 <CardItem style={styles.cardContainer}>
                     <Text style={styles.cardText}>Gallons:  20</Text>
-                </CardItem>
-                <CardItem style={styles.cardContainer}>
-                    <Text style={styles.cardText}>Miles Per Gallon:  17.2</Text>
                 </CardItem>
                 <CardItem footer button style={styles.button} onPress={() => Actions.login()}>
                     <Text style={styles.buttonText}>Add Fuel Receipt</Text>

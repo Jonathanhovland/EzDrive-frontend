@@ -5,9 +5,9 @@ import { Text } from "react-native-svg"
 
 const AverageChart = () => {
 
-    const data = [ 50, 10, 40, 56, 57 ]
+    const data = [ 1.2, 1.9, 3.3, 6.1 ]
 
-    const CUT_OFF = 50
+    const CUT_OFF = 5
     const Labels = ({  x, y, bandwidth, data }) => (
         data.map((value, index) => (
             <Text

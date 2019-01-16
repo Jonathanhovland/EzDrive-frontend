@@ -9,12 +9,33 @@ import MpgChart from "./MpgChart"
 
 
 class Gas extends Component {
+
+  state = {
+    addFuel: false,
+    allGas: [],
+    gasForm: {
+      date: "",
+      miles: 0,
+      cost: 0,
+      gas_amount: 0,
+    }
+  }
+
+  async componentDidMount() {
+    this.getGas()
+  }
+
+  async getGas () {
+    const response = await fetch("http://localhost:3005/maintenance/id/1")
+    const gas = await response.json()
+    this.setState({ allGas: gas })
+  }
   
   static navigationOptions = {
     headerStyle: { backgroundColor: '#4B8B9D' },
       headerLeft: (
           <Button
-              onPress={() => Actions.login()}
+              onPress={() => Actions.home()}
               title="Home"
               color="#FBF9F7"
           />

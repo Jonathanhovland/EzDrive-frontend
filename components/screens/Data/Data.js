@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { StyleSheet, Button } from "react-native"
+import { StyleSheet, Button, Text } from "react-native"
 import { Container } from "native-base"
 import { Actions } from "react-native-router-flux"
 
@@ -13,7 +13,7 @@ class Summary extends Component {
         headerStyle: { backgroundColor: '#4B8B9D' },
           headerLeft: (
               <Button
-                  onPress={() => Actions.login()}
+                  onPress={() => Actions.home()}
                   title="Home"
                   color="#FBF9F7"
               />
@@ -31,6 +31,7 @@ class Summary extends Component {
             <Container style={styles.container}>
                 <CostChart />
                 <SummaryData />
+                <Text style={styles.text}> Average $ Per Mile</Text>
             </Container>
         )
     }
@@ -39,6 +40,12 @@ class Summary extends Component {
 const styles = StyleSheet.create({
     container: {
         backgroundColor: "#E5DEC0"
+    },
+    text: {
+        textAlign: "center",
+        paddingBottom: 30,
+        fontSize:20,
+        color: "#4B8B9D"
     }
 })
 

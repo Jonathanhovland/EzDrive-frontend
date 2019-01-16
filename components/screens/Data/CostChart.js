@@ -8,27 +8,28 @@ const CostChart = () => {
     const data = [
         {
             key: 1,
-            amount: 50,
+            amount: 10203,
+            title: "car",
             svg: { fill: "#4B8B9D" },
         },
         {
             key: 2,
-            amount: 50,
+            amount: 4000,
             svg: { fill: "#76AFB8" }
         },
         {
             key: 3,
-            amount: 40,
+            amount: 900,
             svg: { fill: "#AFD1D1" }
         },
         {
             key: 4,
-            amount: 95,
+            amount: 2300,
             svg: { fill: "#4B8B9D" }
         },
         {
             key: 5,
-            amount: 35,
+            amount: 3203,
             svg: { fill: "#76AFB8" }
         }
     ]

@@ -12,23 +12,14 @@ class Gas extends Component {
 
   state = {
     addFuel: false,
-    allGas: [],
-    gasForm: {
-      date: "",
-      miles: 0,
-      cost: 0,
-      gas_amount: 0,
-    }
+    gasHistory: []
   }
 
-  async componentDidMount() {
-    this.getGas()
-  }
-
-  async getGas () {
-    const response = await fetch("http://localhost:3005/maintenance/id/1")
-    const gas = await response.json()
-    this.setState({ allGas: gas })
+  async componentDidMount () {
+    const getGas = await fetch(`http://localhost:3005/maintenance/id/1`)
+    const gas = await getGas.json()
+    console.log("cdm", gas)
+    this.setState({ gasHistory: gas.maintenance })
   }
   
   static navigationOptions = {
@@ -50,11 +41,12 @@ class Gas extends Component {
 }
   
   render() {
+    console.log("data", this.state.gasHistory)
     return (   
       <Container style={styles.container}>
           <MpgChart />
           <GasForm />
-          <GasHistory />
+          <GasHistory gasHistory={this.state.gasHistory} />
           <Text style={styles.text}> $2310.30 </Text>
       </Container>
     )

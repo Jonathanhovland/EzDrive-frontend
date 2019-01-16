@@ -3,54 +3,30 @@ import { StyleSheet } from "react-native"
 import { Container, Content, Card, CardItem, Text, Left, Right } from "native-base"
 
 
-const GasHistory = () => {
+const GasHistory = ({gasHistory}) => {
+  console.log("GasHistory", gasHistory)
+  return gasHistory.map((gas, i) => {
   return (   
-    <Container style={styles.container}>
+    <Container key={i} style={styles.container}>
       <Content>
-        <Card>
+        <Card >
           <CardItem style={styles.cardContainer}>
             <Text style={styles.cardText}>History</Text>
           </CardItem>
           <CardItem style={styles.cardContainer}>
             <Left>
-              <Text style={styles.cardText}>1/10</Text>
+              <Text style={styles.cardText}>{gas.date}</Text>
             </Left>
-            <Text style={styles.cardText}>$43.30</Text>
+            <Text style={styles.cardText}>{gas.gas_amount}</Text>
             <Right>
-              <Text style={styles.cardText}>20 Gal.</Text>
-            </Right>
-            </CardItem>
-            <CardItem style={styles.cardContainer}>
-            <Left>
-              <Text style={styles.cardText}>1/10</Text>
-            </Left>
-            <Text style={styles.cardText}>$43.30</Text>
-            <Right>
-              <Text style={styles.cardText}>20 Gal.</Text>
-            </Right>
-            </CardItem>
-            <CardItem style={styles.cardContainer}>
-            <Left>
-              <Text style={styles.cardText}>1/10</Text>
-            </Left>
-            <Text style={styles.cardText}>$43.30</Text>
-            <Right>
-              <Text style={styles.cardText}>20 Gal.</Text>
-            </Right>
-            </CardItem>
-            <CardItem style={styles.cardContainer}>
-            <Left>
-              <Text style={styles.cardText}>1/10</Text>
-            </Left>
-            <Text style={styles.cardText}>$43.30</Text>
-            <Right>
-              <Text style={styles.cardText}>20 Gal.</Text>
+              <Text style={styles.cardText}>{gas.cost}</Text>
             </Right>
             </CardItem>
           </Card>
       </Content>
     </Container>
   )
+  })
 }
 
 const styles = StyleSheet.create({

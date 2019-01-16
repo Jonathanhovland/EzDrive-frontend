@@ -9,12 +9,10 @@ import { Actions } from "react-native-router-flux"
 class GasForm extends Component {
 
     state = {
-        fuelForm: {
-            date: "1/25/19",
-            miles: 45109,
-            cost: 45.23,
-            gas_amount: 21
-        }
+        date: "1/25/19",
+        miles: 45109,
+        cost: 45.23,
+        gas_amount: 21
     }
     
     static navigationOptions = {
@@ -24,17 +22,19 @@ class GasForm extends Component {
                   onPress={() => Actions.gas()}
                   title="Gas"
                   color="#FBF9F7"
-              />
+            />
           ),
           headerRight: (
             <Button
             title="Add Fuel"
             color="#FBF9F7"
-        />
-          )
-    
+            />
+        )
     }
+
+
     render() {
+        console.log("state", this.state)
     return(
         <Content style={styles.container}>
             <View style={styles.loginContainer}>
@@ -43,24 +43,28 @@ class GasForm extends Component {
             <Card style={styles.card}>
                 <CardItem style={styles.cardContainer}>
                     <TextInput style = {styles.input} 
+                        onChangeText={(date) => this.setState({date})}
                         returnKeyType="next" 
                         placeholder='Date...' 
                         placeholderTextColor="#AFD1D1"/>
                 </CardItem>
                 <CardItem style={styles.cardContainer}>
-                    <TextInput style = {styles.input} 
+                    <TextInput style = {styles.input}
+                        onChangeText={(miles) => this.setState({miles})} 
                         returnKeyType="next" 
                         placeholder='Miles...' 
                         placeholderTextColor="#AFD1D1"/>
                 </CardItem>
                 <CardItem style={styles.cardContainer}>
                     <TextInput style = {styles.input} 
+                        onChangeText={(cost) => this.setState({cost})}
                         returnKeyType="next" 
                         placeholder='Cost...' 
                         placeholderTextColor="#AFD1D1"/>
                 </CardItem>
                 <CardItem style={styles.cardContainer}>
                     <TextInput style = {styles.input} 
+                        onChangeText={(gas_amount) => this.setState({gas_amount})}
                         returnKeyType="next" 
                         placeholder='Gallons...' 
                         placeholderTextColor="#AFD1D1"/>

@@ -4,26 +4,27 @@ import { Content, Card, CardItem, Text } from "native-base"
 import { Actions } from "react-native-router-flux"
 
 
-const RecentGas = () => {
+const RecentGas = ({gasHistory}) => {
+    console.log("fuck you", gasHistory)
     return(
         <Content>
             <Card>
                 <CardItem style={styles.cardContainer}>
-                    <Text style={styles.cardText}>1/10/2019</Text>
+                    <Text style={styles.cardText}>{gasHistory[gasHistory.length-1].date}</Text>
                 </CardItem>
                 <CardItem style={styles.cardContainer}>
-                    <Text style={styles.cardText}>Mileage:  42,459</Text>
+                    <Text style={styles.cardText}>Mileage:  {gasHistory[gasHistory.length-1].miles}</Text>
                 </CardItem>
                 <CardItem style={styles.cardContainer}>
-                    <Text style={styles.cardText}>Gas:  $43.34</Text>
+                    <Text style={styles.cardText}>Gas:  ${gasHistory[gasHistory.length-1].cost}</Text>
                 </CardItem>
                 <CardItem style={styles.cardContainer}>
-                    <Text style={styles.cardText}>Gallons:  20</Text>
+                    <Text style={styles.cardText}>Gallons:  {gasHistory[gasHistory.length-1].gas_amount}</Text>
                 </CardItem>
                 <CardItem footer button style={styles.button} onPress={() => Actions.gasform()}>
                     <Text style={styles.buttonText}>Add Fuel Receipt</Text>
                 </CardItem>
-           </Card>
+            </Card>
         </Content>
     )
 }

@@ -7,6 +7,15 @@ import { Actions } from "react-native-router-flux"
 
 
 class GasForm extends Component {
+
+    state = {
+        fuelForm: {
+            date: "1/25/19",
+            miles: 45109,
+            cost: 45.23,
+            gas_amount: 21
+        }
+    }
     
     static navigationOptions = {
         headerStyle: { backgroundColor: '#4B8B9D' },
@@ -35,25 +44,25 @@ class GasForm extends Component {
                 <CardItem style={styles.cardContainer}>
                     <TextInput style = {styles.input} 
                         returnKeyType="next" 
-                        placeholder='Enter Date...' 
+                        placeholder='Date...' 
                         placeholderTextColor="#AFD1D1"/>
                 </CardItem>
                 <CardItem style={styles.cardContainer}>
                     <TextInput style = {styles.input} 
                         returnKeyType="next" 
-                        placeholder='Enter Miles...' 
+                        placeholder='Miles...' 
                         placeholderTextColor="#AFD1D1"/>
                 </CardItem>
                 <CardItem style={styles.cardContainer}>
                     <TextInput style = {styles.input} 
                         returnKeyType="next" 
-                        placeholder='Enter Cost...' 
+                        placeholder='Cost...' 
                         placeholderTextColor="#AFD1D1"/>
                 </CardItem>
                 <CardItem style={styles.cardContainer}>
                     <TextInput style = {styles.input} 
                         returnKeyType="next" 
-                        placeholder='Enter Gallons...' 
+                        placeholder='Gallons...' 
                         placeholderTextColor="#AFD1D1"/>
                 </CardItem>
                 <CardItem footer button style={styles.button} onPress={() => Actions.gas()}>

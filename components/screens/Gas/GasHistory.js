@@ -5,6 +5,12 @@ import { Container, Content, Card, CardItem, Text, Left, Right } from "native-ba
 
 const GasHistory = ({gasHistory}) => {
   console.log("GasHistory", gasHistory)
+  gasHistory.sort((a, b) => {
+    let idA = a.id
+    idB = b.id
+    if(idA > idB) return -1
+    if(idA < idB) return 1
+  })
   return gasHistory.map((gas, i) => {
   return (   
     <Container key={i} style={styles.container}>

@@ -3,9 +3,6 @@ import { StyleSheet, TextInput, View, Image, Button } from "react-native"
 import { Content, Card, CardItem, Text } from "native-base"
 import { Actions } from "react-native-router-flux"
 
-
-
-
 class GasForm extends Component {
 
     state = {
@@ -30,6 +27,26 @@ class GasForm extends Component {
             color="#FBF9F7"
             />
         )
+    }
+
+
+    postGas = () => {
+        fetch("http://localhost:3005/maintenance/id/1", {
+            method: "POST",
+            headers: {
+                Accept: 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                vehicle_id: 1,
+                maint_type_id: 1,
+                date: this.state.date,
+                miles: this.state.miles,
+                cost: this.state.cost,
+                gas_amount: this.state.gas_amount
+            })
+        })
+        console.log("fufffffffff", postGas)
     }
 
 
@@ -69,7 +86,7 @@ class GasForm extends Component {
                         placeholder='Gallons...' 
                         placeholderTextColor="#AFD1D1"/>
                 </CardItem>
-                <CardItem footer button style={styles.button} onPress={() => Actions.gas()}>
+                <CardItem footer button style={styles.button} onPress={this.postGas}>
                     <Text style={styles.buttonText}>Submit</Text>
                 </CardItem>
            </Card>

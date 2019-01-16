@@ -8,6 +8,7 @@ import SignUp from './components/screens/SignUp/SignUp';
 import Maint from './components/screens/Maintenance/Maint';
 import Data from './components/screens/Data/Data';
 import Gas from './components/screens/Gas/Gas';
+import GasForm from "./components/screens/Gas/GasForm";
 
 
 
@@ -32,6 +33,10 @@ class App extends Component {
           <Scene
             key="gas"
             component={Gas}
+          />
+          <Scene
+            key="gasform"
+            component={GasForm}
           />
           <Scene
             key="maint"

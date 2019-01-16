@@ -1,5 +1,5 @@
 import React from "react"
-import { StyleSheet } from "react-native"
+import { StyleSheet, TextInput } from "react-native"
 import { Content, Card, CardItem, Text } from "native-base"
 import { Actions } from "react-native-router-flux"
 
@@ -9,19 +9,31 @@ const GasForm = () => {
         <Content>
             <Card>
                 <CardItem style={styles.cardContainer}>
-                    <Text style={styles.cardText}>1/10/2019</Text>
+                    <TextInput style = {styles.input} 
+                        returnKeyType="next" 
+                        placeholder='Date' 
+                        placeholderTextColor="#FBF9F7"/>
                 </CardItem>
                 <CardItem style={styles.cardContainer}>
-                    <Text style={styles.cardText}>Mileage:  42,459</Text>
+                    <TextInput style = {styles.input} 
+                        returnKeyType="next" 
+                        placeholder='Miles' 
+                        placeholderTextColor="#FBF9F7"/>
                 </CardItem>
                 <CardItem style={styles.cardContainer}>
-                    <Text style={styles.cardText}>Gas:  $43.34</Text>
+                    <TextInput style = {styles.input} 
+                        returnKeyType="next" 
+                        placeholder='Cost' 
+                        placeholderTextColor="#FBF9F7"/>
                 </CardItem>
                 <CardItem style={styles.cardContainer}>
-                    <Text style={styles.cardText}>Gallons:  20</Text>
+                    <TextInput style = {styles.input} 
+                        returnKeyType="next" 
+                        placeholder='Gallons' 
+                        placeholderTextColor="#FBF9F7"/>
                 </CardItem>
-                <CardItem footer button style={styles.button} onPress={() => Actions.login()}>
-                    <Text style={styles.buttonText}>Add Fuel Receipt</Text>
+                <CardItem footer button style={styles.button} onPress={() => Actions.gas()}>
+                    <Text style={styles.buttonText}>Submit</Text>
                 </CardItem>
            </Card>
         </Content>
@@ -34,7 +46,7 @@ const styles = StyleSheet.create({
         justifyContent: "center",
         alignItems: "center"
     },
-    cardText:{
+    input:{
         color: "#FBF9F7",
         textAlign: "center",
         fontWeight: "bold",

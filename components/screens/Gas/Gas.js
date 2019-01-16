@@ -4,15 +4,21 @@ import { Container, Text } from "native-base"
 import { Actions } from "react-native-router-flux"
 
 import GasHistory from "./GasHistory"
-import GasForm from "./GasForm"
 import MpgChart from "./MpgChart"
+import RecentGas from "./RecentGas";
 
 
 class Gas extends Component {
 
   state = {
     addFuel: false,
-    gasHistory: []
+    gasHistory: [],
+    fuelForm: {
+      date: "",
+      miles: 0,
+      cost: 0,
+      gas_amount: 0
+    }
   }
 
   async componentDidMount () {
@@ -21,6 +27,10 @@ class Gas extends Component {
     console.log("cdm", gas)
     this.setState({ gasHistory: gas.maintenance })
   }
+
+  // toggleAddFuel = () => {
+  //   this.setState({ addFuel: !this.state.addFuel })
+  // }
   
   static navigationOptions = {
     headerStyle: { backgroundColor: '#4B8B9D' },
@@ -45,7 +55,7 @@ class Gas extends Component {
     return (   
       <Container style={styles.container}>
           <MpgChart />
-          <GasForm />
+          <RecentGas />
           <GasHistory gasHistory={this.state.gasHistory} />
           <Text style={styles.text}> $2310.30 </Text>
       </Container>

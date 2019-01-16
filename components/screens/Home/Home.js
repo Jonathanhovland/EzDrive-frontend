@@ -21,9 +21,9 @@ class Home extends Component {
         ),
         headerRight: (
           <Button
-          title="Home"
-          color="#FBF9F7"
-      />
+            title="Home"
+            color="#FBF9F7"
+          />
         )
   }
     

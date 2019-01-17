@@ -4,31 +4,32 @@ import { Container, Content, Card, CardItem, Text, Left, Right } from "native-ba
 
 
 const GasHistory = ({gasHistory}) => {
-  console.log("GasHistory", gasHistory)
+
   gasHistory.sort((a, b) => {
     let idA = a.id
-    idB = b.id
+    let idB = b.id
     if(idA > idB) return -1
     if(idA < idB) return 1
   })
+
   return gasHistory.map((gas, i) => {
-  return (   
-    <Container key={i} style={styles.container}>
-      <Content>
-        <Card style={styles.card}>
-          <CardItem style={styles.cardContainer}>
-            <Left>
-              <Text style={styles.cardText}>{gas.date}</Text>
-            </Left>
-            <Text style={styles.cardText}>{gas.gas_amount} gallons</Text>
-            <Right>
-              <Text style={styles.cardText}>${gas.cost}</Text>
-            </Right>
-            </CardItem>
-          </Card>
-      </Content>
-    </Container>
-  )
+    return (   
+      <Container key={i} style={styles.container}>
+        <Content>
+          <Card style={styles.card}>
+            <CardItem style={styles.cardContainer}>
+              <Left>
+                <Text style={styles.cardText}>{gas.date}</Text>
+              </Left>
+              <Text style={styles.cardText}>{gas.gas_amount} gallons</Text>
+              <Right>
+                <Text style={styles.cardText}>${gas.cost}</Text>
+              </Right>
+              </CardItem>
+            </Card>
+        </Content>
+      </Container>
+    )
   })
 }
 
@@ -36,7 +37,6 @@ const styles = StyleSheet.create({
   container: {
       backgroundColor: "#E5DEC0",
       marginBottom: -175
-
   },
   card : {
     marginBottom: 0

@@ -3,8 +3,9 @@ import { View } from "native-base"
 import { PieChart } from "react-native-svg-charts"
 import { Text } from "react-native-svg"
 
-const CostChart = () => {
 
+const CostChart = () => {
+    
     const data = [
         {
             key: 1,
@@ -62,7 +63,7 @@ const CostChart = () => {
             valueAccessor={({ item }) => item.amount}
             data={data}
             spacing={0}
-            outerRadius={'95%'}
+            outerRadius={"95%"}
         >
             <Labels/>
         </PieChart>

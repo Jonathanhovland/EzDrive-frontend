@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { StyleSheet, Button, Text} from "react-native"
+import { StyleSheet, Button } from "react-native"
 import { Container } from "native-base"
 import { Actions } from "react-native-router-flux"
 
@@ -11,20 +11,20 @@ import HFooter from "./HFooter";
 class Home extends Component {
 
   static navigationOptions = {
-      headerStyle: { backgroundColor: '#4B8B9D' },
-        headerLeft: (
-          <Button
-              onPress={() => Actions.login()}
-              title="Sign Out"
-              color="#FBF9F7"
-          />
-        ),
-        headerRight: (
-          <Button
-            title="Home"
-            color="#FBF9F7"
-          />
-        )
+    headerStyle: { backgroundColor: "#4B8B9D" },
+      headerLeft: (
+        <Button
+          onPress={() => Actions.login()}
+          title="Sign Out"
+          color="#FBF9F7"
+        />
+      ),
+      headerRight: (
+        <Button
+          title="Home"
+          color="#FBF9F7"
+        />
+      )
   }
     
   render() {
@@ -38,10 +38,9 @@ class Home extends Component {
   }
 }
         
-
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#E5DEC0'
+    backgroundColor: "#E5DEC0"
   }
 })
             

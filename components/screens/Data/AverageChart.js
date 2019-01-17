@@ -3,6 +3,7 @@ import { View } from "react-native"
 import { BarChart, Grid } from "react-native-svg-charts"
 import { Text } from "react-native-svg"
 
+
 const AverageChart = () => {
 
     const data = [ 1.2, 1.9, 3.3, 6.1 ]

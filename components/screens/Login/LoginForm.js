@@ -11,13 +11,13 @@ const LoginForm = () => {
                 autoCapitalize="none" 
                 onSubmitEditing={() => this.passwordInput.focus()} 
                 autoCorrect={false} 
-                keyboardType='email-address' 
+                keyboardType="email-address" 
                 returnKeyType="next" 
-                placeholder='Username' 
+                placeholder="Username" 
                 placeholderTextColor="#FBF9F7"/>
             <TextInput style = {styles.input}   
                 returnKeyType="go" ref={(input)=> this.passwordInput = input} 
-                placeholder='Password' 
+                placeholder="Password" 
                 placeholderTextColor="#FBF9F7" 
                 secureTextEntry/>
             <TouchableOpacity style={styles.buttonContainer} onPress={() => Actions.home()}>

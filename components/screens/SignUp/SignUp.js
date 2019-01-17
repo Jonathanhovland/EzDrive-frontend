@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import { View, Text, TextInput, TouchableOpacity, Button ,StyleSheet ,StatusBar, Image} from "react-native"
 import { Actions } from "react-native-router-flux"
 
+
 class SignUp extends Component {
 
     static navigationOptions = {

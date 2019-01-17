@@ -2,7 +2,6 @@ import React, { Component } from "react"
 import { View, StyleSheet, Image, KeyboardAvoidingView } from "react-native"
 import { Button } from "native-base"
 
-
 import LoginForm from "./LoginForm"
 
 

@@ -10,7 +10,7 @@ import CostChart from "./CostChart"
 class Summary extends Component {
 
     static navigationOptions = {
-        headerStyle: { backgroundColor: '#4B8B9D' },
+        headerStyle: { backgroundColor: "#4B8B9D" },
           headerLeft: (
               <Button
                   onPress={() => Actions.home()}

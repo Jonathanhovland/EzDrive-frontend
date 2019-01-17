@@ -5,63 +5,63 @@ import AverageChart from "./AverageChart"
 
 
 const SummaryData = () =>  {
-    return (
-      <Container style={styles.container}>
-        <Content>
-          <Card>
+  return (
+    <Container style={styles.container}>
+      <Content>
+        <Card>
+          <CardItem style={styles.cardContainer}>
+            <Left>
+              <Text style={styles.cardText}>Payments  (49%)</Text>
+            </Left>
+            <Right>
+              <Text style={styles.cardText}>$10,203.01</Text>
+            </Right>
+            </CardItem>
             <CardItem style={styles.cardContainer}>
-              <Left>
-                <Text style={styles.cardText}>Payments  (49%)</Text>
-              </Left>
-              <Right>
-                <Text style={styles.cardText}>$10,203.01</Text>
-              </Right>
-             </CardItem>
-             <CardItem style={styles.cardContainer}>
-              <Left>
-                <Text style={styles.cardText}>Insurance  (20%)</Text>
-              </Left>
-              <Right>
-                <Text style={styles.cardText}>$4000.08</Text>
-              </Right>
-             </CardItem>
-             <CardItem style={styles.cardContainer}>
-              <Left>
-                <Text style={styles.cardText}>Registration  (5%)</Text>
-              </Left>
-              <Right>
-                <Text style={styles.cardText}>$900.76</Text>
-              </Right>
-             </CardItem>
-             <CardItem style={styles.cardContainer}>
-              <Left>
-                <Text style={styles.cardText}>Maintenance (11%)</Text>
-              </Left>
-              <Right>
-                <Text style={styles.cardText}>$2300.98</Text>
-              </Right>
-             </CardItem>
-             <CardItem style={styles.cardContainer}>
-              <Left>
-                <Text style={styles.cardText}>Gas  (15%)</Text>
-              </Left>
-              <Right>
-                <Text style={styles.cardText}>$3,203.01</Text>
-              </Right>
-             </CardItem>
+            <Left>
+              <Text style={styles.cardText}>Insurance  (20%)</Text>
+            </Left>
+            <Right>
+              <Text style={styles.cardText}>$4000.08</Text>
+            </Right>
+            </CardItem>
             <CardItem style={styles.cardContainer}>
-              <Left>
-                <Text style={styles.cardText2}>Total</Text>
-              </Left>
-              <Right>
-                <Text style={styles.cardText2}>$21,203.01</Text>
-              </Right>
-             </CardItem>
-           </Card>
-        <AverageChart />
-        </Content>
-      </Container>
-    )
+            <Left>
+              <Text style={styles.cardText}>Registration  (5%)</Text>
+            </Left>
+            <Right>
+              <Text style={styles.cardText}>$900.76</Text>
+            </Right>
+            </CardItem>
+            <CardItem style={styles.cardContainer}>
+            <Left>
+              <Text style={styles.cardText}>Maintenance (11%)</Text>
+            </Left>
+            <Right>
+              <Text style={styles.cardText}>$2300.98</Text>
+            </Right>
+            </CardItem>
+            <CardItem style={styles.cardContainer}>
+            <Left>
+              <Text style={styles.cardText}>Gas  (15%)</Text>
+            </Left>
+            <Right>
+              <Text style={styles.cardText}>$3,203.01</Text>
+            </Right>
+            </CardItem>
+          <CardItem style={styles.cardContainer}>
+            <Left>
+              <Text style={styles.cardText2}>Total</Text>
+            </Left>
+            <Right>
+              <Text style={styles.cardText2}>$21,203.01</Text>
+            </Right>
+            </CardItem>
+          </Card>
+      <AverageChart />
+      </Content>
+    </Container>
+  )
 }
         
 const styles = StyleSheet.create({

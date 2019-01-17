@@ -1,12 +1,12 @@
 import React from "react"
 import { StyleSheet } from "react-native"
 import { Container, Content, Card, CardItem, Text } from "native-base"
-import { Actions } from "react-native-router-flux"
 import call from 'react-native-phone-call'
 
+
 const args = {
-  number: '3073333654', // String value with the number to call
-  prompt: false // Optional boolean property. Determines if the user should be prompt prior to the call 
+  number: '3073333654',
+  prompt: false
 }
 
 const Miles = () =>  {

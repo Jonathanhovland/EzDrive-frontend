@@ -70,8 +70,9 @@ const styles = StyleSheet.create({
     color: '#4B8B9D',
     fontSize: 25,
     textAlign: 'center',
-    marginBottom: 25,
-    fontWeight: 'bold',
+    marginTop: 10,
+    marginBottom: 15,
+    fontWeight: 'bold'
   }
 })
 

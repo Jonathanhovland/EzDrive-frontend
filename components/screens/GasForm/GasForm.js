@@ -3,6 +3,7 @@ import { StyleSheet, TextInput, View, Image, Button } from "react-native"
 import { Content, Card, CardItem, Text } from "native-base"
 import { Actions } from "react-native-router-flux"
 
+
 class GasForm extends Component {
 
     state = {
@@ -13,29 +14,28 @@ class GasForm extends Component {
     }
     
     static navigationOptions = {
-        headerStyle: { backgroundColor: '#4B8B9D' },
-          headerLeft: (
-              <Button
-                  onPress={() => Actions.gas()}
-                  title="Gas"
-                  color="#FBF9F7"
-            />
+        headerStyle: { backgroundColor: "#4B8B9D" },
+            headerLeft: (
+                <Button
+                    onPress={() => Actions.gas()}
+                    title="Gas"
+                    color="#FBF9F7"
+                />
           ),
-          headerRight: (
-            <Button
-            title="Add Fuel"
-            color="#FBF9F7"
-            />
+            headerRight: (
+                <Button
+                    title="Add Fuel"
+                    color="#FBF9F7"
+                />
         )
     }
 
-
     postGas = () => {
-        fetch("http://localhost:3005/maintenance/id/1", {
+        fetch("https://ezzdrive.herokuapp.com/maintenance", {
             method: "POST",
             headers: {
-                Accept: 'application/json',
-                'Content-Type': 'application/json',
+                Accept: "application/json",
+                "Content-Type": "application/json",
             },
             body: JSON.stringify({
                 vehicle_id: 1,
@@ -46,55 +46,52 @@ class GasForm extends Component {
                 gas_amount: this.state.gas_amount
             })
         })
-        console.log("fufffffffff", postGas)
     }
 
-
     render() {
-        console.log("state", this.state)
-    return(
-        <Content style={styles.container}>
+        return(
+            <Content style={styles.container}>
+                <View style={styles.loginContainer}>
+                    <Image resizeMode="contain" style={styles.logo} source={require("../../../img/logo.jpg")} />
+                </View>
+                <Card style={styles.card}>
+                    <CardItem style={styles.cardContainer}>
+                        <TextInput style = {styles.input} 
+                            onChangeText={(date) => this.setState({date})}
+                            returnKeyType="next" 
+                            placeholder="Date..." 
+                            placeholderTextColor="#AFD1D1"/>
+                    </CardItem>
+                    <CardItem style={styles.cardContainer}>
+                        <TextInput style = {styles.input}
+                            onChangeText={(miles) => this.setState({miles})} 
+                            returnKeyType="next" 
+                            placeholder="Miles..." 
+                            placeholderTextColor="#AFD1D1"/>
+                    </CardItem>
+                    <CardItem style={styles.cardContainer}>
+                        <TextInput style = {styles.input} 
+                            onChangeText={(cost) => this.setState({cost})}
+                            returnKeyType="next" 
+                            placeholder="Cost..." 
+                            placeholderTextColor="#AFD1D1"/>
+                    </CardItem>
+                    <CardItem style={styles.cardContainer}>
+                        <TextInput style = {styles.input} 
+                            onChangeText={(gas_amount) => this.setState({gas_amount})}
+                            returnKeyType="next" 
+                            placeholder="Gallons..." 
+                            placeholderTextColor="#AFD1D1"/>
+                    </CardItem>
+                    <CardItem footer button style={styles.button} onPress={() => Actions.gas()}>
+                        <Text style={styles.buttonText}>Submit</Text>
+                    </CardItem>
+            </Card>
             <View style={styles.loginContainer}>
-                <Image resizeMode="contain" style={styles.logo} source={require("../../../img/logo.jpg")} />
-            </View>
-            <Card style={styles.card}>
-                <CardItem style={styles.cardContainer}>
-                    <TextInput style = {styles.input} 
-                        onChangeText={(date) => this.setState({date})}
-                        returnKeyType="next" 
-                        placeholder='Date...' 
-                        placeholderTextColor="#AFD1D1"/>
-                </CardItem>
-                <CardItem style={styles.cardContainer}>
-                    <TextInput style = {styles.input}
-                        onChangeText={(miles) => this.setState({miles})} 
-                        returnKeyType="next" 
-                        placeholder='Miles...' 
-                        placeholderTextColor="#AFD1D1"/>
-                </CardItem>
-                <CardItem style={styles.cardContainer}>
-                    <TextInput style = {styles.input} 
-                        onChangeText={(cost) => this.setState({cost})}
-                        returnKeyType="next" 
-                        placeholder='Cost...' 
-                        placeholderTextColor="#AFD1D1"/>
-                </CardItem>
-                <CardItem style={styles.cardContainer}>
-                    <TextInput style = {styles.input} 
-                        onChangeText={(gas_amount) => this.setState({gas_amount})}
-                        returnKeyType="next" 
-                        placeholder='Gallons...' 
-                        placeholderTextColor="#AFD1D1"/>
-                </CardItem>
-                <CardItem footer button style={styles.button} onPress={this.postGas}>
-                    <Text style={styles.buttonText}>Submit</Text>
-                </CardItem>
-           </Card>
-           <View style={styles.loginContainer}>
-                <Image resizeMode="contain" style={styles.logo} source={require("../../../img/logo2.png")} />
-            </View>
-        </Content>
-    )
+                    <Image resizeMode="contain" style={styles.logo} source={require("../../../img/logo2.png")} />
+                </View>
+            </Content>
+        )
     }
 }
 

@@ -5,7 +5,7 @@ import { Actions } from "react-native-router-flux"
 
 
 const RecentGas = ({gasHistory}) => {
-    console.log("fuck you", gasHistory)
+
     return(
         <Content>
             <Card>

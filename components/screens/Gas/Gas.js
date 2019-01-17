@@ -15,39 +15,36 @@ class Gas extends Component {
   }
 
   async componentDidMount () {
-    const getGas = await fetch(`http://localhost:3005/maintenance/id/1`)
+    const getGas = await fetch("https://ezzdrive.herokuapp.com/maintenance/id/1")
     const gas = await getGas.json()
-    console.log("cdm", gas)
     this.setState({ gasHistory: gas.maintenance })
   }
   
   static navigationOptions = {
-    headerStyle: { backgroundColor: '#4B8B9D' },
+    headerStyle: { backgroundColor: "#4B8B9D" },
       headerLeft: (
-          <Button
-              onPress={() => Actions.home()}
-              title="Home"
-              color="#FBF9F7"
-          />
+        <Button
+          onPress={() => Actions.home()}
+          title="Home"
+          color="#FBF9F7"
+        />
       ),
       headerRight: (
         <Button
-        title="Gas"
-        color="#FBF9F7"
-    />
+          title="Gas"
+          color="#FBF9F7"
+        />
       )
-
-}
+  }
   
   render() {
-    console.log("data", this.state.gasHistory)
     const {gasHistory} = this.state
     if(gasHistory.length > 0){
     return (   
       <Container style={styles.container}>
           <MpgChart />
-          <RecentGas gasHistory={this.state.gasHistory}/>
-          <GasHistory gasHistory={this.state.gasHistory} />
+          <RecentGas gasHistory={gasHistory}/>
+          <GasHistory gasHistory={gasHistory} />
           <Text style={styles.text}> $2310.30 </Text>
       </Container>
     )
@@ -63,16 +60,16 @@ class Gas extends Component {
 
 const styles = StyleSheet.create({
   container: {
-      backgroundColor: "#E5DEC0",
-      textAlign: "center"
+    backgroundColor: "#E5DEC0",
+    textAlign: "center"
   },
   text:{
-    color: '#4B8B9D',
+    color: "#4B8B9D",
     fontSize: 25,
-    textAlign: 'center',
+    textAlign: "center",
     marginTop: 10,
     marginBottom: 15,
-    fontWeight: 'bold'
+    fontWeight: "bold"
   }
 })
 

@@ -10,10 +10,11 @@ Back end deployed link: https://ezzdrive.herokuapp.com/
 
 
 
-<img width="418" alt="screen shot 2019-01-14 at 10 38 38 am" src="https://user-images.githubusercontent.com/40579877/51636647-00d24580-1f17-11e9-8196-602af6e65e62.png">
-<img width="405" alt="screen shot 2019-01-14 at 10 38 26 am" src="https://user-images.githubusercontent.com/40579877/51636648-00d24580-1f17-11e9-86f0-5d2913211947.png">
-<img width="218" alt="screen shot 2019-01-23 at 1 56 37 pm" src="https://user-images.githubusercontent.com/40579877/51636649-00d24580-1f17-11e9-9c46-e3e2148f03ed.png">
-<img width="220" alt="screen shot 2019-01-23 at 1 56 59 pm" src="https://user-images.githubusercontent.com/40579877/51636651-016adc00-1f17-11e9-8046-81aaa7182d18.png">
-<img width="220" alt="screen shot 2019-01-23 at 1 55 46 pm" src="https://user-images.githubusercontent.com/40579877/51636653-016adc00-1f17-11e9-91bc-5824bfc0b49a.png">
-<img width="222" alt="screen shot 2019-01-23 at 1 57 37 pm" src="https://user-images.githubusercontent.com/40579877/51636656-016adc00-1f17-11e9-8762-6064845c7639.png">
-<img width="219" alt="screen shot 2019-01-23 at 1 55 59 pm" src="https://user-images.githubusercontent.com/40579877/51636657-02037280-1f17-11e9-9602-3f1337451a19.png">
+
+<img width="221" alt="screen shot 2019-01-14 at 10 38 26 am" src="https://user-images.githubusercontent.com/40579877/51636911-9ff73d00-1f17-11e9-969a-a2e3d3d1955f.png">
+<img width="221" alt="screen shot 2019-01-14 at 10 38 38 am" src="https://user-images.githubusercontent.com/40579877/51636919-a2f22d80-1f17-11e9-8c7f-8fd04e69ef9f.png">
+<img width="218" alt="screen shot 2019-01-23 at 1 56 37 pm" src="https://user-images.githubusercontent.com/40579877/51636930-aa193b80-1f17-11e9-8d6a-1ca5a82db280.png">
+<img width="220" alt="screen shot 2019-01-23 at 1 55 46 pm" src="https://user-images.githubusercontent.com/40579877/51636955-b9988480-1f17-11e9-95ff-ec958b10b190.png">
+<img width="220" alt="screen shot 2019-01-23 at 1 56 59 pm" src="https://user-images.githubusercontent.com/40579877/51636960-bdc4a200-1f17-11e9-855f-039616e603b1.png">
+<img width="219" alt="screen shot 2019-01-23 at 1 55 59 pm" src="https://user-images.githubusercontent.com/40579877/51636968-c1f0bf80-1f17-11e9-917e-f0c78d06b767.png">
+<img width="222" alt="screen shot 2019-01-23 at 1 57 37 pm" src="https://user-images.githubusercontent.com/40579877/51636974-c5844680-1f17-11e9-8142-602372be7b44.png">

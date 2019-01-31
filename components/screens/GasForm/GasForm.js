@@ -48,6 +48,11 @@ class GasForm extends Component {
         })
     }
 
+    submitGas() {
+        this.postGas()
+        Actions.gas()
+    }
+
     render() {
         return(
             <Content style={styles.container}>
@@ -83,7 +88,7 @@ class GasForm extends Component {
                             placeholder="Gallons..." 
                             placeholderTextColor="#AFD1D1"/>
                     </CardItem>
-                    <CardItem footer button style={styles.button} onPress={() => Actions.gas()}>
+                    <CardItem footer button style={styles.button} onPress={() => this.submitGas()}>
                         <Text style={styles.buttonText}>Submit</Text>
                     </CardItem>
             </Card>

@@ -4,7 +4,7 @@ In Progress
 
 React Native / Node.js / PostgreSQL / Knex.js / Native Base /  react-native-svg-charts 
 
-EzDrive is a full stack native application that helps you track how much your car actually cost you.  Every time you fill up your gas tank you input how much it costed and your current miles.  You can budget how much your maintenance are going to cost and how long until you need them.  With EzDrive you can get a total cost of ownership and see if your car is worth owning. 
+EzDrive is a full stack native application that helps you track your vehicles TCO (Total Cost of Ownership). Every time you fuel, or provide maintenance to your vehicle, you input the transaction cost and your current mileage. You can then reference your expenditures and create a maintenance budget. EZDrive provides you a detailed TCO that allows you to determine if your investment is worth maintaining.
 
 Back end GitHub: https://github.com/Jonathanhovland/EzDrive-backend
 
